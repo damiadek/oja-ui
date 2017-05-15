@@ -1,6 +1,53 @@
 body{
-   color: yellow;
    background-image: url("../images/bg1.jpg");
    background-size: fill;
-   height: 600px;
+   /*background-attachment: fixed;*/
+   background-position: -100px 0px;
+   transition: background-position .4s;
+   animation: panarom 35s infinite ease-in-out;
+}
+.landing-div{
+   height: 100vh;
+   background: rgba(0, 0, 0, .3);
+}
+.form-div{
+    margin-top: 20vh;
+    background: rgba(255,255,255,0.8);
+    padding: 50px;
+    padding-top: 10px;
+    transition: all .4s;
+}
+.form-div input{
+    height: 50px;
+}
+.form-div input.form-control{
+    background:  rgba(255, 255, 255, 0.6);
+    margin-bottom: 20px;
+    transition: all .4s;
+    font-size: 20px;
+    text-align: center;
+}
+.form-div input.form-control:focus{
+    background:  #fff;
+    margin-bottom: 20px;
+    transition: all .4s;
+}
+.text-warning{
+    color: #F0AD4E;
+}
+@media(min-width: 768px){
+    .form-div{
+    }
+}
+
+@keyframes panarom{
+    0%{
+        background-position-x: 0px; 
+    }
+    50%{
+        background-position-x: -100px; 
+    }
+    100%{
+        background-position-x: 0px; 
+    }
 }
