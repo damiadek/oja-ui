@@ -63,13 +63,14 @@
 					AND <a href="index.html">RELOAD</a> THE PAGE.
 				</noscript>
 				<ul class="nav navbar-nav navbar-right navbar-collapse collapse home_links">
-					<li><a href="dashboard.html" class="btn btn-warning login_toggle r">Login</a></li>
+					<li><a href="dashboard.html" class="btn btn-warning swap_button r" target="login">Login</a></li>
 				</ul>
 			</nav>
-			<div class="form-div col-md-4 col-md-offset-4 r">
+			<div class="form-div col-md-4 col-md-offset-4 r f-s-17">
                 <form class="row">
 					<h3 class="text-warning text-center"><img src="../assets/images/logo.png" height="60" alt="OjaExpress"> Oja Express</h3>
-					<!--<br>-->
+					
+					<!--zip code form-->
 					<fieldset class="signup_1 col-md-12 text-center active">
                         <h2 class="text-info">We find stores closest to you</h3>
 						
@@ -85,10 +86,11 @@
 						</div>
 
 					</fieldset>
-					<!--<br>-->
+					
+					<!--signup form-->
 					<fieldset class="signup_2 col-md-12">
 
-                        <h2 class="text-info text-center">Please enter your details</h3>
+                        <h2 class="text-info text-center">Please enter your details</h2>
 						<div class="form-group col-md-6">
 							<input class="form-control" type="text" placeholder="Firstname">
 						</div>
@@ -105,14 +107,23 @@
 							<input class="form-control" type="password" placeholder="Confirm your password">
 						</div>
 						<div class="form-group col-md-12">
-							<input class="btn btn-block btn-warning swap_button" target="signup_1" type="button" value="Submit Details">
+							<button class="btn btn-block btn-warning swap_button" target="signup_1" type="button">SUBMIT DETAILS</button>
+						</div>
+						<span class="col-md-12 f-s-14">
+							By submitting this form, you agree to the <a href="#">Terms of Service</a> and <a>Privacy Policy</a> of <b class="label label-success">Oja Express</b>
+						</span>
+						<div class="col-md-12 text-center">
+							<br>
+							Already have an account? <a href="#" class="swap_button" target="login">login</a>
 						</div>
 						
 					</fieldset>
-					<!--<br>-->
-					<fieldset class="login col-md-12 ">
+					
+					<!--login form-->
+					<fieldset class="login col-md-12">
 						
-                        <h2 class="text-info text-center">Please enter your details</h3>
+                        <h2 class="text-info text-center">Please enter your details</h2>
+
 						<div class="form-group col-md-12">
 							<input class="form-control" type="text" placeholder="Email Address">
 						</div>
@@ -120,9 +131,46 @@
 							<input class="form-control" type="password" placeholder="Enter your password">
 						</div>
 						<div class="form-group col-md-12">
-							<input class="btn btn-block btn-warning swap_button" type="button" value="Login">
+							<button class="btn btn-block btn-warning swap_button login_button" target="signup_1" type="button">LOGIN</button>
 						</div>
 						
+						<br>
+						<div class="form-group col-md-12 text-center">
+							Forgot Password? <a href="#" class="swap_button" target="forgot_password">reset</a>
+						</div>
+						
+						<div class="form-group col-md-12 text-center">
+							New user? <button class="swap_button btn btn-small btn-success" target="signup_1">SIGN UP</button>
+						 	<small class="f-s-17">or <b>Login</b> with </small>
+							<a href="#" class="fa-stack fa-lg">
+							  <i class="fa fa-square-o fa-stack-2x tw-icon"></i>
+							  <i class="fa fa-twitter fa-stack-1x tw-icon"></i>
+							</a>
+							<small class="f-s-17">or</small>
+							<a href="#" class="fa-stack fa-lg">
+							  <i class="fa fa-square-o fa-stack-2x fb-icon"></i>
+							  <i class="fa fa-facebook fa-stack-1x fb-icon"></i>
+							</a>
+						</div>
+
+						
+					</fieldset>
+
+					<!--reset password form-->
+					<fieldset class="forgot_password col-md-12 text-center">
+                        <h2 class="text-info">Submit your email address</h2>
+						
+						<div class="form-group">
+							<input class="form-control" type="text" placeholder="Enter Email Address">
+						</div>
+						
+						<div class="form-group">
+							<button class="btn btn-lg btn-block btn-warning swap_button" target="signup_2" type="button">SEND LINK</button>
+						</div>
+						<div>
+							Already have an account? <a href="#" class="swap_button" target="login">login</a>
+						</div>
+
 					</fieldset>
 				</form>
 			</div>
@@ -132,6 +180,7 @@
 	<script src="../assets/plugins/jquery/jquery.min.js"></script>
 	<script src="../assets/plugins/jquery/jquery.easing.min.js"></script>
 	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/functions.js"></script>
     <script src="../assets/js/ui.js"></script>
 </body>
 

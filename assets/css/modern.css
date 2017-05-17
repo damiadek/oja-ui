@@ -15,6 +15,10 @@ html {
     position: relative;
 }
 
+a{
+    cursor: pointer;
+}
+
 a:hover,
 a:active,
 a:focus {
@@ -2456,7 +2460,6 @@ tr.group:hover {
     margin: 0px;
     z-index: 999;
     border-radius: 0px;
-    border: none;
     margin: auto;
     position: relative;
     -webkit-box-shadow: 0 5px 5px -5px rgba(0, 0, 0, 0.1);
