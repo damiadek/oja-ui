@@ -7,7 +7,7 @@ body{
 body.home{
    background-image: url("../images/bg1.jpg");
    background-size: fill;
-   background-position: -100px 0px;
+   background-position: 0px -100px;
    transition: background-position .4s;
    background-repeat: no-repeat;
    animation: panarom 35s infinite ease-in-out;
@@ -26,7 +26,7 @@ body.home{
 .navbar.transparent .navbar-right > li > a{
 	opacity: .9;
 	color: #F0AD4E;
-    background: none;
+    background: #fff;
     border: solid 1px #F0AD4E;
     padding-top: 10px;
     padding-bottom: 10px;
@@ -121,6 +121,16 @@ body.home{
     top: 0;
 }
 
+/*cart*/
+.cart li .del_order{
+    opacity: .3;
+    transition: all .3s;
+}
+.cart li:hover .del_order{
+    opacity: .8;
+    transition: all .3s;
+}
+
 
 @media(min-width: 768px){
     .navbar.transparent{
@@ -130,6 +140,9 @@ body.home{
     ._banner > img{
         height: 100px;
     }   
+    .navbar.transparent .navbar-right > li > a{
+        background: none;
+    }
 }
 
 @keyframes panarom{
