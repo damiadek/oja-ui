@@ -52,4 +52,29 @@ $(document).ready(function(){
 	});
 
 
+	
 });
+
+
+$(window).load(
+    function () {
+        $('.carousel1').carouFredSel({
+            auto: false,
+            prev: '.prev1',
+            next: '.next1',
+            width: 960,
+            items: {
+                visible: {
+                    min: 1,
+                    max: 4
+                },
+            },
+            responsive: true,
+            scroll: 1,
+            mousewheel: false,
+            swipe: {
+                onMouse: false,
+                onTouch: false
+            }
+        });
+    });

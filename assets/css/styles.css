@@ -1,6 +1,26 @@
 /*
 homepage styles
 */
+/*carousel*/
+ul {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+ul.list li{
+	/*background: url(../images/marker.gif) 0 6px no-repeat;*/
+	color: #6f6f6f;
+	font-size:13px;
+	margin-top:7px;
+	padding-left: 27px;
+}
+.carousel1 li {float: left; width:200px !important; margin-right:50px;}
+
+.carousel1 li{
+    color:#000; margin:10px 200px 30px 0;
+}
+
 body{
     background: white;
     background: url("../images/groc_.jpg") no-repeat;
@@ -69,37 +89,18 @@ body.home{
 
 
 /*navbar*/
+._nav{
+    background: white;
+}
+.navbar-brand img{
+    display: inline;
+}
 .navbar.transparent{
-	background: none;
-	box-shadow: none;
-	transition: all .5s ease-in-out;
     padding-right: 20px;
     padding-left: 20px;
-    padding-top: 10px;
 }
-.navbar.transparent .navbar-nav > li > a:visited,
-.navbar.transparent .navbar-nav > li > a{
-	opacity: .9;
-	color: #F0AD4E;
-	color: #FF9151;
-    background: #fff;
-    border: solid 1px #F0AD4E;
-    border: solid 1px #FF9151;
-    padding-top: 10px;
-    padding-bottom: 10px;
-}
-.navbar.transparent .navbar-nav > li > a:hover,
-.navbar.transparent .navbar-nav > li > a:focus{
-	opacity: 1;
-	background: #F0AD4E;
-	background: #FF9151;
-    color: #fff;
-	transition: all .5s ease-in;
-}
-.navbar.transparent .navbar-nav > li.active > a,
-.navbar.transparent .navbar-nav > li.active > a:hover{
-	opacity: 1;
-	background: transparent;
+.navbar .dropdown{
+    display: block;
 }
 ._banner{
     background: #FFF8D3;
@@ -240,10 +241,6 @@ body.home{
 }
 
 @media(min-width: 768px){
-    .navbar.transparent{
-        padding-right: 100px;
-        padding-left: 100px;
-    }
     ._banner > img{
         height: 100px;
     }   
@@ -252,6 +249,44 @@ body.home{
     }
     body.home{
         background-size: 120% 120%;
+    }
+    .navbar.transparent{
+        background: none;
+        box-shadow: none;
+        transition: all .5s ease-in-out;
+        padding-right: 100px;
+        padding-left: 100px;
+        padding-top: 10px;
+    }
+    .navbar.transparent .navbar-nav > li > a:visited,
+    .navbar.transparent .navbar-nav > li > a{
+        opacity: .9;
+        color: #F0AD4E;
+        color: #FF9151;
+        background: #fff;
+        border: solid 1px #F0AD4E;
+        border: solid 1px #FF9151;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .navbar.transparent .navbar-nav > li > a:hover,
+    .navbar.transparent .navbar-nav > li > a:focus{
+        opacity: 1;
+        background: #F0AD4E;
+        background: #FF9151;
+        color: #fff;
+        transition: all .5s ease-in;
+    }
+    .navbar.transparent .navbar-nav > li.active > a,
+    .navbar.transparent .navbar-nav > li.active > a:hover{
+        opacity: 1;
+        background: transparent;
+    }
+    .navbar .dropdown{
+        display: inline-block;
+    }   
+    ._nav{
+        background: transparent;
     }
 }
 
