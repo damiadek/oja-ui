@@ -1,4 +1,9 @@
 $(document).ready(function(){
+	// signup form animation
+	$(".form-div").animate({"opacity": "1"}, 1000, function(){
+		$(".more").animate({"opacity": "1"}, 1000);
+	});
+
 	// redirect to login page
 	$(".login_button").click(function(){
 		window.location.href = "dashboard.html";
@@ -32,5 +37,19 @@ $(document).ready(function(){
 	$(".toggle_stores").click(function(){
 		$(".stores").toggleClass("open");
 	});
+
+	// display welcome message
+	$(".welcome-message-wrapper").delay(1000).fadeIn(2000,function(){
+		var $this = $(this);
+		var time_out = setTimeout(function(){
+			$this.fadeOut(3000);
+		},10000);
+
+		time_out;
+	})
+	.find(".welcome-close").click(function(){
+		$(".welcome-message-wrapper").fadeOut();
+	});
+
 
 });

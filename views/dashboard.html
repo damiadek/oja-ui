@@ -10,128 +10,239 @@
 	<link rel="icon" href="../assets/images/logo.png">
 	<link rel="stylesheet" type="text/css" href="../assets/plugins/bootstrap/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/plugins/fontawesome/css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="../assets/plugins/line-icons/simple-line-icons.css">
 	<link rel="stylesheet" type="text/css" href="../assets/plugins/datatables/css/jquery.datatables.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/plugins/jquery-ui/jquery-ui.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/modern.css">
 	<link rel="stylesheet" type="text/css" href="../assets/css/styles.css">
 </head>
 <body>
+    <div class="welcome-message-wrapper">
+        <a class="welcome-close pull-right">&times;</a>
+        <div class="welcome-message m-l-xxs">
+            <b class="welcome-title">Welcome back, <br><span class="f-s-18 f-bold">User's Name</span></b>
+        </div>
+        <div style="clear:both"></div>
+    </div>
+
 	<div class="container-fluid">
-			<div class="row">
-				<div class="col-md-12 b-b text-center p _banner hidden-md">
-					<img src="../assets/images/logo1.png" height="100" alt="OjaExpress">
+		<div class="row">
+			<div class="col-md-12 b-b text-center text-warning p _banner text-xl " style="font-family: cursive;">
+				<img src="../assets/images/logo.png" height="100" alt="OjaExpress">
+				<i class="m-l-n-lg">Oja Express</i>
+			</div>
+		</div>
+		<div class="row">
+			<nav class="col-md-12 navbar navbar-default navbar-fixed-top transparent b-b" style="background:rgba(255,255,255,0.9);" role="navigation">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="._nav">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand page_scroll text-warning no-p visible-md">
+						<img src="../assets/images/full-logo.png" height="50" alt="OjaExpress">
+					</a>
+				</div>
+				<noscript>
+					<style type="text/css">
+						.load_cover{
+							display: none;
+						}
+						noscript{
+							background: white;
+							position: fixed;
+							top: 20%;
+							width: 100%;
+							height: 40%;
+							text-align: center;
+							left: 0;
+							padding: 5% 10%;
+							font-size: 20px;
+							font-weight: bold;
+							box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
+						}
+						.landing_div{
+							opacity: 0.5;
+						}
+						body{
+							background: #666;
+						}
+					</style>
+					PLEASE
+					<span class="text-danger">ENABLE JAVASCRIPT</span> IN YOUR BROWSER SETTINGSS
+					OR <span class="text-danger">DISABLE SPEED MODE </span>
+					ON GOOGLE CHROME(MOBILE) OR UC BROWSER(MOBILE)
+					AND <a href="index.html">RELOAD</a> THE PAGE.
+				</noscript>
+				<div class="container-fluid _nav navbar-collapse collapse">
+					<ul class="nav navbar-nav text-md">
+						<li class="store_view">
+							<a href="#" class="toggle_stores">
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										width="20px" height="13px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<g>
+										<path class="svg" d="M0,208c0,29.781,20.438,54.594,48,61.75V480H16c-8.813,0-16,7.156-16,16s7.188,16,16,16h480c8.875,0,16-7.156,16-16
+											s-7.125-16-16-16h-32V269.75c27.562-7.156,48-31.969,48-61.75v-16H0V208z M320,272c35.375,0,64-28.656,64-64
+											c0,29.781,20.438,54.594,48,61.75V480H192V272c35.375,0,64-28.656,64-64C256,243.344,284.688,272,320,272z M176,269.75V480H80
+											V269.75c27.563-7.156,48-31.969,48-61.75C128,237.781,148.438,262.594,176,269.75z M448,48H64L0,176h512L448,48z M135.188,83.563
+											l-32,64c-1.438,2.813-4.25,4.438-7.188,4.438c-1.188,0-2.406-0.25-3.563-0.844c-3.938-1.969-5.563-6.781-3.563-10.719l32-64
+											c2-3.938,6.781-5.531,10.719-3.594C135.563,74.813,137.125,79.625,135.188,83.563z M199.188,83.563l-32,64
+											c-1.438,2.813-4.25,4.438-7.188,4.438c-1.188,0-2.406-0.25-3.563-0.844c-3.938-1.969-5.563-6.781-3.563-10.719l32-64
+											c2-3.938,6.813-5.531,10.719-3.594C199.563,74.813,201.125,79.625,199.188,83.563z M264,144c0,4.438-3.562,8-8,8
+											c-4.406,0-8-3.563-8-8V80c0-4.438,3.594-8,8-8c4.438,0,8,3.563,8,8V144z M355.875,151c-1.25,0.688-2.562,1-3.875,1
+											c-2.812,0-5.562-1.5-7-4.156l-35-64c-2.125-3.875-0.688-8.75,3.188-10.844c3.813-2.125,8.75-0.75,10.875,3.156l35,64
+											C361.125,144.031,359.75,148.906,355.875,151z M419.562,151.156C418.438,151.75,417.25,152,416,152
+											c-2.938,0-5.75-1.625-7.125-4.438l-32-64c-2-3.938-0.375-8.75,3.562-10.719c3.875-1.969,8.75-0.375,10.75,3.594l32,64
+											C425.125,144.375,423.562,149.188,419.562,151.156z M136,386.438v-36.875c-4.688-2.812-8-7.688-8-13.562c0-8.844,7.188-16,16-16
+											c8.875,0,16,7.156,16,16c0,5.875-3.281,10.75-8,13.562v36.875c4.719,2.813,8,7.688,8,13.563c0,8.844-7.125,16-16,16
+											c-8.813,0-16-7.156-16-16C128,394.125,131.313,389.25,136,386.438z M64,16c0-8.844,7.188-16,16-16h352c8.875,0,16,7.156,16,16
+											s-7.125,16-16,16H80C71.188,32,64,24.844,64,16z M280.438,357.656l-11.312-11.313l45.25-45.25l11.312,11.313L280.438,357.656z
+											M280.438,402.906l-11.312-11.313l90.5-90.5l11.312,11.313L280.438,402.906z M359.625,346.344l11.312,11.313l-45.25,45.25
+											l-11.312-11.313L359.625,346.344z"/>
+									</g>
+								</svg>
+									Stores <i class="fa fa-angle-down"></i>
+								<span class="badge badge-success pull-right f-s-10">new</span>
+							</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav navbar-right">
+						<li class="dropdown cart m-r-sm">
+							<a href="#" class="dropdown-toggle tip btn-rounded" data-toggle="dropdown" title="Cart">
+								<i class="icon-basket-loaded bg-n f-s-20"></i>
+								<span class="badge badge-success pull-right f-s-10">2</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">You have 2 items in your cart</a></li>
+								<li class="divider"></li>
+								<li>
+									<a>
+										Item 1
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>20
+											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a>
+										Item 1
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>20
+											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
+										</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a>
+										Total
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>26
+											<i class="fa fa-money text-success"></i>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a>
+										<button class="btn btn-block btn-success">
+											CHECKOUT  <i class="fa fa-hand-o-right"></i>
+										</button>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown list m-r-sm">
+							<a href="#" class="dropdown-toggle tip btn-rounded" data-toggle="dropdown" title="List">
+								<i class="icon-note bg-n f-s-20"></i>
+								<span class="badge badge-danger pull-right f-s-10">3</span>
+							</a>
+							<ul class="dropdown-menu">
+								<li><a href="#">You have 3 items left on your list</a></li>
+								<li class="divider"></li>
+								<li>
+									<a>
+										Item 1
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>20
+											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete from list"></i>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a>
+										Item 2
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>20
+											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete from list"></i>
+										</span>
+									</a>
+								</li>
+								<li>
+									<a>
+										Item 3
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>20
+											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete from list"></i>
+										</span>
+									</a>
+								</li>
+								<li class="divider"></li>
+								<li>
+									<a>
+										Total
+										<span class="pull-right">
+											<i class="fa fa-dollar"></i>26
+											<i class="fa fa-money text-success"></i>
+										</span>
+									</a>
+								</li>
+							</ul>
+						</li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown"><i class="fa fa-cog spin-child"></i> My Details <b class="fa fa-angle-down"></b></a>
+							<ul class="dropdown-menu">
+								<li><a href="#"><i class="fa fa-map-marker text-default"></i>Location</a></li>
+								<li><a href="#"><i class="icon-user text-success"></i>Profile</a></li>
+								<li><a href="#"><i class="fa fa-archive text-default"></i>Orders</a></li>
+								<li><a href="#"><i class="fa fa-heart text-default"></i>Favorites</a></li>
+								<li><a href="#"><i class="fa fa-info-circle text-info"></i>How it works</a></li>
+								<li class="divider"></li>
+								<li><a href="index.html"><i class="icon-close text-danger"></i>Logout</a></li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+		<div class="row bg-light light p" style="min-height: 100vh;">
+
+			<div class="col-md-10 col-md-offset-1">
+				<div class="alert alert-success alert-dismissible r-5" role="alert">
+				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
+					Hello, your profile is <b class="text-danger">30%</b> complete, please click <a>here</a> to update it.
 				</div>
 			</div>
-			<div class="row">
-				<nav class="col-md-12 navbar navbar-default navbar-fixed-top transparent b-b" role="navigation">
-					<div class="navbar-header">
-						<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="._nav">
-							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-						</button>
-						<a href="index.html" class="navbar-brand page_scroll text-warning no-p visible-md">
-							<img src="../assets/images/full-logo.png" height="50" alt="OjaExpress">
-						</a>
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<div class="panel panel-white">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							Top Picks  
+							<button class="label label-default r m-l-xxs p-v-xxs text-success">
+								View <!--<b class="badge badge-danger">25</b>-->25 more
+								<i class="fa fa-angle-right f-bold"></i>
+							</button> 
+						</h3>
 					</div>
-					<noscript>
-						<style type="text/css">
-							.load_cover{
-								display: none;
-							}
-							noscript{
-								background: white;
-								position: fixed;
-								top: 20%;
-								width: 100%;
-								height: 40%;
-								text-align: center;
-								left: 0;
-								padding: 5% 10%;
-								font-size: 20px;
-								font-weight: bold;
-								box-shadow: 0px 2px 12px rgba(0,0,0,0.2);
-							}
-							.landing_div{
-								opacity: 0.5;
-							}
-							body{
-								background: #666;
-							}
-						</style>
-						PLEASE
-						<span class="text-danger">ENABLE JAVASCRIPT</span> IN YOUR BROWSER SETTINGSS
-						OR <span class="text-danger">DISABLE SPEED MODE </span>
-						ON GOOGLE CHROME(MOBILE) OR UC BROWSER(MOBILE)
-						AND <a href="index.html">RELOAD</a> THE PAGE.
-					</noscript>
-					<div class="container-fluid _nav navbar-collapse collapse">
-						<ul class="nav navbar-nav text-md">
-							<li class="store_view">
-								<a href="#" class="toggle_stores">
-									<i class="fa fa-cutlery text-success"></i> Stores <i class="fa fa-angle-down"></i>
-								</a>
-							</li>
-							<li class="dropdown">
-								<a href="#" class="dropdown-toggle text-warning spin" data-toggle="dropdown"><i class="fa fa-cog spin-child"></i> Account <b class="fa fa-angle-down"></b></a>
-								<ul class="dropdown-menu">
-									<li><a href="#"><i class="fa fa-user text-primary"></i>Profile</a></li>
-									<li><a href="#"><i class="fa fa-archive text-default"></i>Orders</a></li>
-									<li><a href="#"><i class="fa fa-heart text-success"></i>Favorites</a></li>
-									<li><a href="#"><i class="fa fa-info-circle text-info"></i>How it works</a></li>
-									<li class="divider"></li>
-									<li><a href="index.html"><i class="fa fa-close text-danger"></i>Logout</a></li>
-								</ul>
-							</li>
-						</ul>
-						<ul class="nav navbar-nav navbar-right">
-							<li class="dropdown cart">
-								<a href="#" class="dropdown-toggle" data-toggle="dropdown">
-									<i class="fa fa-shopping-cart bg-n"></i>
-									Cart (2)
-									<span class="fa fa-angle-down"></span>
-								</a>
-								<ul class="dropdown-menu">
-									<li><a>You have 2 items in your cart</a></li>
-									<li class="divider"></li>
-									<li>
-										<a>
-											Item 1
-											<span class="pull-right">
-												<i class="fa fa-dollar"></i>20
-												<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
-											</span>
-										</a>
-									</li>
-									<li>
-										<a>
-											Item 1
-											<span class="pull-right">
-												<i class="fa fa-dollar"></i>20
-												<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
-											</span>
-										</a>
-									</li>
-									<li class="divider"></li>
-									<li>
-										<a>
-											<button class="btn btn-block btn-warning b-warning">
-												CHECKOUT  <i class="fa fa-hand-o-right"></i>
-											</button>
-										</a>
-									</li>
-
-								</ul>
-							</li>
-						</ul>
-							<!--<div class="input-group m-r-lg w-lg navbar-right">
-								<input class="form-control" type="text"/>
-								<span class="input-group-addon after"><i class="fa fa-search"></i></span>
-							</div>-->
+					<hr>
+					<div class="panel-body">
+						     
 					</div>
-				</nav>
+				</div>
 			</div>
+		</div>
 	</div>
 	<div class="stores container-fluid p">
 		<div class="row">
@@ -147,6 +258,7 @@
 	<script src="../assets/plugins/jquery/jquery.min.js"></script>
 	<script src="../assets/plugins/jquery/jquery.easing.min.js"></script>
 	<script src="../assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../assets/js/functions.js"></script>
     <script src="../assets/js/ui.js"></script>
 </body>
 

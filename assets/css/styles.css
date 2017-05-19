@@ -3,60 +3,40 @@ homepage styles
 */
 body{
     background: white;
+    background: url("../images/groc_.jpg") no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+    overflow-x: hidden;
 }
 body.home{
-   background-image: url("../images/bg1.jpg");
-   background-size: fill;
+   background-image: url("../images/groc_.jpg");
+   background-size: 150% 150%;
    background-position: 0px -100px;
    transition: background-position .4s;
    background-repeat: no-repeat;
    animation: panarom 35s infinite ease-in-out;
 }
-
-/*navbar*/
-.navbar.transparent{
-	background: none;
-	box-shadow: none;
-	transition: all .5s ease-in-out;
-    padding-right: 20px;
-    padding-left: 20px;
-    padding-top: 10px;
+.more{
+    opacity: 0;
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
-.navbar.transparent .navbar-right > li > a:visited,
-.navbar.transparent .navbar-right > li > a{
-	opacity: .9;
-	color: #F0AD4E;
-    background: #fff;
-    border: solid 1px #F0AD4E;
-    padding-top: 10px;
-    padding-bottom: 10px;
+.down_arrow{
+    position: absolute;
+    bottom: 0px;
 }
-.navbar.transparent .navbar-right > li > a:hover,
-.navbar.transparent .navbar-right > li > a:focus{
-	opacity: 1;
-	background: #F0AD4E;
-    color: #fff;
-	transition: all .5s ease-in;
-}
-.navbar.transparent .navbar-right > li.active > a,
-.navbar.transparent .navbar-right > li.active > a:hover{
-	opacity: 1;
-	background: transparent;
-}
-._banner{
-    background: #FFF8D3;
-}
-._banner > img{
-    height: 50px;
-}
-
 .landing-div{
    min-height: 100vh;
-   background: rgba(0, 0, 0, .3);
+   background: rgba(0, 0, 0, .6);
+   background: rgba(250, 250, 250, .6);
 }
 .form-div{
+    position: relative;
     margin-top: 20vh;
+    opacity: 0;
     background: rgba(255,255,255,0.9);
+    background: rgba(255,255,255,1);
     padding: 50px;
     padding-top: 10px;
     transition: all .4s;
@@ -87,8 +67,94 @@ body.home{
     display: block;
 }
 
+
+/*navbar*/
+.navbar.transparent{
+	background: none;
+	box-shadow: none;
+	transition: all .5s ease-in-out;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-top: 10px;
+}
+.navbar.transparent .navbar-nav > li > a:visited,
+.navbar.transparent .navbar-nav > li > a{
+	opacity: .9;
+	color: #F0AD4E;
+	color: #FF9151;
+    background: #fff;
+    border: solid 1px #F0AD4E;
+    border: solid 1px #FF9151;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+.navbar.transparent .navbar-nav > li > a:hover,
+.navbar.transparent .navbar-nav > li > a:focus{
+	opacity: 1;
+	background: #F0AD4E;
+	background: #FF9151;
+    color: #fff;
+	transition: all .5s ease-in;
+}
+.navbar.transparent .navbar-nav > li.active > a,
+.navbar.transparent .navbar-nav > li.active > a:hover{
+	opacity: 1;
+	background: transparent;
+}
+._banner{
+    background: #FFF8D3;
+}
+._banner > img{
+    height: 50px;
+}
+.store_view .badge{
+    animation: pulse 1s 6;
+}
+.store_view:hover .badge{
+    animation: none;
+}
+.svg{
+    fill: #FF9151;
+    transition: all .4s;
+}
+.store_view .toggle_stores:focus .svg,
+.store_view .toggle_stores:hover .svg{
+    transition: all .4s;
+    fill: #FFFFFF;
+}
+
 .text-warning{
     color: #F0AD4E;
+    color: #FF9151;
+}
+.text-success{
+    color: #4BA74C;
+}
+.btn-warning{
+    background: #FF9151;
+    /*background: #F79048;*/
+    transition: all .4s;
+}
+.btn-warning:hover{
+    background: #F0AD4E;
+    transition: all .4s;
+}
+.btn-success{
+    background: #0E8044;
+    transition: all .4s;
+}
+.btn-success:hover{
+    transition: all .4s;
+}
+.badge.badge-success{
+    background: #07984C;
+}
+.bg-white{
+    background: white;
+    color: #555;
+}
+.r-5{
+    border-radius: 5px;
 }
 
 
@@ -120,9 +186,14 @@ body.home{
 .stores.open{
     top: 0;
 }
+.store_name{
+    width: 20px;
+    overflow: hidden;
+}
+
 
 /*cart*/
-.cart li .del_order{
+.cart li .del_order{    
     opacity: .3;
     transition: all .3s;
 }
@@ -132,6 +203,42 @@ body.home{
 }
 
 
+/*welcome*/
+.welcome-message-wrapper{
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: 250px;
+    z-index: 9000;
+    background: rgba(32, 162, 94, 0.67);
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+.welcome-message{
+    float: left;
+    width: 150px;
+    display: block;
+}
+.welcome-close{
+    position: absolute;
+    right: 5px;
+    top: -1px;
+    color: #eee;
+    padding: 0px 2px;
+    transition: all .3s ease-in;
+    font-size: 30px;
+    font-weight: 20px;
+}
+.welcome-close:hover,
+.welcome-close:active,
+.welcome-close:visited,
+.welcome-close:focus{
+    color: #fff;
+    text-decoration: none;
+}
+
 @media(min-width: 768px){
     .navbar.transparent{
         padding-right: 100px;
@@ -140,8 +247,11 @@ body.home{
     ._banner > img{
         height: 100px;
     }   
-    .navbar.transparent .navbar-right > li > a{
+    .navbar.transparent .navbar-nav > li > a{
         background: none;
+    }
+    body.home{
+        background-size: 120% 120%;
     }
 }
 
@@ -155,4 +265,32 @@ body.home{
     100%{
         background-position-x: 0px; 
     }
+}
+
+@-webkit-keyframes pulse {
+    0% {transform:scale(1)}
+    25% {transform:scale(1.2)}
+    50% {transform:scale(1)}
+    75% {transform:scale(1)}
+    100% {transform:scale(1)}
+}
+
+@keyframes pulse {
+    0% {transform:scale(1)}
+    25% {transform:scale(1.2)}
+    50% {transform:scale(1)}
+    75% {transform:scale(1)}
+    100% {transform:scale(1)}
+}
+
+@-webkit-keyframes zoomInOut {
+    0% {transform:scale(0)}
+    50% {transform:scale(1.2)}
+    100% {transform:scale(1)}
+}
+
+@keyframes zoomInOut {
+    0% {transform:scale(0)}
+    50% {transform:scale(1.2)}
+    100% {transform:scale(1)}
 }
