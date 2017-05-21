@@ -2,23 +2,22 @@
 homepage styles
 */
 /*carousel*/
+*{
+    font-family: maiandria DG;
+}
 ul {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-
-ul.list li{
-	/*background: url(../images/marker.gif) 0 6px no-repeat;*/
-	color: #6f6f6f;
-	font-size:13px;
-	margin-top:7px;
-	padding-left: 27px;
-}
-.carousel1 li {float: left; width:200px !important; margin-right:50px;}
-
-.carousel1 li{
-    color:#000; margin:10px 200px 30px 0;
+ul.carousel li{
+    width: auto!important;
+	padding-left: 20px;
+	padding-right: 20px;
+    float: left; 
+    text-align: center;
+    color:#000; 
+    border-right: dotted 1px #888;
 }
 
 body{
@@ -30,7 +29,7 @@ body{
 }
 body.home{
    background-image: url("../images/groc_.jpg");
-   background-size: 150% 150%;
+   background-size: 1800px 110%;
    background-position: 0px -100px;
    transition: background-position .4s;
    background-repeat: no-repeat;
@@ -92,6 +91,11 @@ body.home{
 ._nav{
     background: white;
 }
+.navbar a:focus,
+.navbar a:hover,
+.navbar a{
+    color: #777!important;
+}
 .navbar-brand img{
     display: inline;
 }
@@ -115,13 +119,13 @@ body.home{
     animation: none;
 }
 .svg{
-    fill: #FF9151;
+    /*fill: #0E8044;*/
     transition: all .4s;
 }
 .store_view .toggle_stores:focus .svg,
 .store_view .toggle_stores:hover .svg{
     transition: all .4s;
-    fill: #FFFFFF;
+    /*fill: #FFFFFF;*/
 }
 
 .text-warning{
@@ -147,6 +151,9 @@ body.home{
 .btn-success:hover{
     transition: all .4s;
 }
+.bg-success.dark{
+    background: #07984C;
+}
 .badge.badge-success{
     background: #07984C;
 }
@@ -156,6 +163,9 @@ body.home{
 }
 .r-5{
     border-radius: 5px;
+}
+button:disabled{
+    opacity: .6;
 }
 
 
@@ -240,7 +250,7 @@ body.home{
     text-decoration: none;
 }
 
-@media(min-width: 768px){
+/*@media(min-width: 768px){
     ._banner > img{
         height: 100px;
     }   
@@ -250,13 +260,14 @@ body.home{
     body.home{
         background-size: 120% 120%;
     }
+    .navbar,
     .navbar.transparent{
-        background: none;
         box-shadow: none;
         transition: all .5s ease-in-out;
         padding-right: 100px;
         padding-left: 100px;
-        padding-top: 10px;
+        padding-top: 0;
+        height: auto;
     }
     .navbar.transparent .navbar-nav > li > a:visited,
     .navbar.transparent .navbar-nav > li > a{
@@ -288,7 +299,7 @@ body.home{
     ._nav{
         background: transparent;
     }
-}
+}*/
 
 @keyframes panarom{
     0%{

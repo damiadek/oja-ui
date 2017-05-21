@@ -14,3 +14,17 @@ function removeSpinner(parent){
         $(parent).find($spinner_class).remove();
     }
 }
+
+// countdown
+function countdown(element){
+    var a = element.attr("secs");
+    var int_ =  setInterval(function(){
+        element.html(a);
+        a--;
+        if(a < 0){
+            clearInterval(int_);
+            element.html("").parent().prop("disabled", false);
+        }
+    }, 1000);
+    int_;
+}

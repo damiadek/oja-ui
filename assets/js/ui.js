@@ -51,17 +51,19 @@ $(document).ready(function(){
 		$(".welcome-message-wrapper").fadeOut();
 	});
 
-
+	// resend verification
+	countdown($(".countdown"));
 	
 });
 
 
-$(window).load(
-    function () {
-        $('.carousel1').carouFredSel({
+$(window).load(function(){
+	$.each($('.carousel'), function(i, this_object){
+		j = i + 1;
+		$(".carousel_" + j).carouFredSel({
             auto: false,
-            prev: '.prev1',
-            next: '.next1',
+            prev: '.prev'+j,
+            next: '.next'+j,
             width: 960,
             items: {
                 visible: {
@@ -70,11 +72,70 @@ $(window).load(
                 },
             },
             responsive: true,
-            scroll: 1,
-            mousewheel: false,
-            swipe: {
-                onMouse: false,
-                onTouch: false
-            }
-        });
-    });
+            scroll: 1
+            // mousewheel: true,
+            // swipe: {
+            //     onMouse: true,
+            //     onTouch: true
+            // }
+		});
+	});
+	
+	// function () {
+        // $('.carousel1').carouFredSel({
+        //     auto: false,
+        //     prev: '.prev1',
+        //     next: '.next1',
+        //     width: 960,
+        //     items: {
+        //         visible: {
+        //             min: 1,
+        //             max: 4
+        //         },
+        //     },
+        //     responsive: true,
+        //     scroll: 1,
+		// 	pagination: "#pager"
+        //     // mousewheel: true,
+        //     // swipe: {
+        //     //     onMouse: true,
+        //     //     onTouch: true
+        //     // }
+		// });
+	// }
+});
+
+
+// carouFredSel
+// Carousel slider
+// if ($("#slider").length){
+//     $(".slider").carouFredSel({
+//         prev: '.btn-prev',
+//         next: '.btn-next',
+//         pagination: ".pagination",
+//         items: {
+//             visible: 3,
+//             width: 300
+//         },
+//         width: 900,
+//         height: 150,
+//         align: 'left', //needed when only 1 or 2 items displayed (+ margin right on item)
+//         scroll: {
+//             duration: 1000,
+//             pauseOnHover: true,
+//             easing: "quadratic"
+//         },
+//         swipe: {
+//             onMouse: true,
+//             onTouch: true,
+//             options: {
+//                 //liste d'exclusion par defaut moins l'element <a>
+//                 excludedElements: "button, input, select, textarea, .noSwipe",
+//                 //recherche et trigger du <a> au tap
+//                 tap: function(event, target) {
+//                     window.open($(target).closest('a').attr('href'), '_self');
+//                 }
+//             }
+//         }
+//     });
+// };

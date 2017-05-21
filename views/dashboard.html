@@ -27,13 +27,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<div class="col-md-12 b-b text-center text-warning p _banner text-xl " style="font-family: cursive;">
-				<img src="../assets/images/logo.png" height="100" alt="OjaExpress">
-				<i class="m-l-n-lg">Oja Express</i>
-			</div>
-		</div>
-		<div class="row">
-			<nav class="col-md-12 navbar navbar-default navbar-fixed-top transparent b-b" style="background:rgba(255,255,255,0.9);" role="navigation">
+			<nav class="col-md-12 navbar navbar-default navbar-fixed-top  b-b" style="background:rgba(255,255,255,1);position: fixed; top:0;" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="._nav">
 						<span class="sr-only">Toggle navigation</span>
@@ -41,8 +35,9 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.html" class="navbar-brand page_scroll text-warning no-p visible-md">
-						<img src="../assets/images/full-logo.png" height="50" alt="OjaExpress">
+					<a href="index.html" class="navbar-brand page_scroll text-warning no-p">
+						<img src="../assets/images/logo.png" height="50" alt="OjaExpress">
+						OjaExpress
 					</a>
 				</div>
 				<noscript>
@@ -110,7 +105,7 @@
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
 						<li class="dropdown cart m-r-sm">
-							<a href="#" class="dropdown-toggle tip btn-rounded" data-toggle="dropdown" title="Cart">
+							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="Cart">
 								<i class="icon-basket-loaded bg-n f-s-20"></i>
 								<span class="badge badge-success pull-right f-s-10">2</span>
 							</a>
@@ -155,7 +150,7 @@
 							</ul>
 						</li>
 						<li class="dropdown list m-r-sm">
-							<a href="#" class="dropdown-toggle tip btn-rounded" data-toggle="dropdown" title="List">
+							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="List" >
 								<i class="icon-note bg-n f-s-20"></i>
 								<span class="badge badge-danger pull-right f-s-10">3</span>
 							</a>
@@ -202,10 +197,10 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown"><i class="fa fa-cog spin-child"></i> My Details <b class="fa fa-angle-down"></b></a>
+							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown"><i class="fa fa-cog spin-child"></i> My Account <b class="fa fa-angle-down"></b></a>
 							<ul class="dropdown-menu">
-								<li><a href="#"><i class="fa fa-map-marker text-default"></i>Location</a></li>
-								<li><a href="#"><i class="icon-user text-success"></i>Profile</a></li>
+								<li><a href="#"><i class="fa fa-map-marker text-default"></i>990909</a></li>
+								<li><a href="profile.html"><i class="icon-user text-success"></i>Profile</a></li>
 								<li><a href="#"><i class="fa fa-archive text-default"></i>Orders</a></li>
 								<li><a href="#"><i class="fa fa-heart text-default"></i>Favorites</a></li>
 								<li><a href="#"><i class="fa fa-info-circle text-info"></i>How it works</a></li>
@@ -217,7 +212,17 @@
 				</div>
 			</nav>
 		</div>
-		<div class="row bg-light light p" style="min-height: 100vh;">
+	</div>
+	<div class="container-fluid" style="padding-top: 50px;">
+		<div class="row" style="padding: 150px 0px; background: rgba(0,0,0,0.6);">
+			<div class="col-md-6 col-md-offset-3 p">
+				<div class="input-group">
+					<input class="form-control btn-rounded text-lg" type="text" placeholder="Search Oja Express...">
+					<span class="input-group-addon bg-success dark"><i class="fa fa-search"></i></span>
+				</div>
+			</div>
+		</div>
+		<div class="row bg-light p" style="min-height: 100vh;">
 
 			<div class="col-md-10 col-md-offset-1">
 				<div class="alert alert-success alert-dismissible r-5" role="alert">
@@ -226,70 +231,200 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-10 col-md-offset-1">
-				<div class="panel panel-white">
-					<div class="panel-heading">
-						<h3 class="panel-title">
+						<h3 class="m-b-lg">
 							Top Picks  
 							<button class="label label-default r m-l-xxs p-v-xxs text-success">
-								View <!--<b class="badge badge-danger">25</b>-->25 more
+								View 25 more
 								<i class="fa fa-angle-right f-bold"></i>
 							</button> 
-						</h3>&nbsp;Links:  
+						&nbsp;Links:  
 						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
 						 | 
-						<a href="#">Hi</a>
+						<a href="phone_verification.html">Phone Verification</a>
 						 | 
 						<a href="#">Hey</a>
 						 | 
 						<a href="#">Wassup</a>
-						<button class="btn btn-sm btn-warning btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-						<button class="btn btn-sm btn-warning btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
-					</div>
-					<hr>
-					<div class="panel-body" style="overflow: hidden; height:415px; position: relative">  
+						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+						</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
 							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
 							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
-							<ul class="carousel1">
+							<ul class="carousel carousel_1">
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Business AnalYtics</h4>
-									At vero eos et accusamus et iusto odioll dignissimos ducimus qui bl abd gdihtiiti praesentium voluptatum deenir rf uiti jlle atque. Corrupti quos doloregts et quaso molestias excepturi sint  hip occaecatiw. At vero eos et  hhj  jk kjusamutrelomiker
-									oluty gtrew lokiju qwertynomi. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Growth Strategies</h4>
-									Aolity vero eos et accusamus et iustokill odio dignissimos ducimus qui bl abduyl gdihtii praesentium voluptatum deenir rfi uiti jll atque. Dertorrupti quos doloregtse et quas molestias excepturi sint  hipterq occaecati. Ot vero eos et  hhj  jklomi poli kjusamu s et iusto odio dignissm. <br>
-									<a href="#" class="btn">more</a> </li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Smarter CommErce</h4>
-									Tro eos et accusamus et iusto odioyrew dignissimos ducimus qui bl abd gdihtiitt praesentium voluptatum deenir rf uiti jlle atque. Holrrupti quos doloregts et quasi molestias excepturi sint  hip occaecatill. Ght vero eos et  hhj  jk kjusamuremmo li                              s et iusto odio dignissms ucimus. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Market Research</h4>
-									Hfvero eos et accusamus et iusto odiotri dignissimos ducimus qui bl abd gdihtiin praesentium voluptatum deenir rf uiti jllo atque. Dorrupti quos doloregts et quase molestias excepturi sint  hip occaecatib. Rt vero eos et  rewlo jk kjusamu wertilo masdes et iusto odio asgnissme. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Business AnalYtics</h4>
-									At vero eos et accusamus et iusto odioll dignissimos ducimus qui bl abd gdihtiiti praesentium voluptatum deenir rf uiti jlle atque. Corrupti quos doloregts et quaso molestias excepturi sint  hip occaecatiw. At vero eos et  hhj  jk kjusamutrelomiker
-									oluty gtrew lokiju qwertynomi. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Growth Strategies</h4>
-									Aolity vero eos et accusamus et iustokill odio dignissimos ducimus qui bl abduyl gdihtii praesentium voluptatum deenir rfi uiti jll atque. Dertorrupti quos doloregtse et quas molestias excepturi sint  hipterq occaecati. Ot vero eos et  hhj  jklomi poli kjusamu s et iusto odio dignissm. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Smarter CommErce</h4>
-									Tro eos et accusamus et iusto odioyrew dignissimos ducimus qui bl abd gdihtiitt praesentium voluptatum deenir rf uiti jlle atque. Holrrupti quos doloregts et quasi molestias excepturi sint  hip occaecatill. Ght vero eos et  hhj  jk kjusamuremmo li                              s et iusto odio dignissms ucimus. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
 									<h4>Market Research</h4>
-									Hfvero eos et accusamus et iusto odiotri dignissimos ducimus qui bl abd gdihtiin praesentium voluptatum deenir rf uiti jllo atque. Dorrupti quos doloregts et quase molestias excepturi sint  hip occaecatib. Rt vero eos et  rewlo jk kjusamu wertilo masdes et iusto odio asgnissme. <br>
-									<a href="#" class="btn">more</a> </li>
+								</li>
 							</ul>
 					</div>
 					<div class="col-md-3 m-t-lg">
 					</div>
 				</div>
 			</div>
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+						<h3 class="m-b-lg">
+							Top Picks  
+							<button class="label label-default r m-l-xxs p-v-xxs text-success">
+								View 25 more
+								<i class="fa fa-angle-right f-bold"></i>
+							</button> 
+						&nbsp;Links:  
+						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
+						 | 
+						<a href="phone_verification.html">Phone Verification</a>
+						 | 
+						<a href="#">Hey</a>
+						 | 
+						<a href="#">Wassup</a>
+						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+						</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
+							<a href="#" class="prev2" class="fa fa-angle-left fa-3x"></a>
+							<a href="#" class="next2" class="fa fa-angle-right fa-3x"></a>
+							<ul class="carousel carousel_2">
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								</li>
+								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								</li>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+								</li>
+							</ul>
+					</div>
+					<div class="col-md-3 m-t-lg">
+					</div>
+				</div>
+			</div>
+			<!--<div class="col-xs-12 col-md-10 col-md-offset-1">
+					<h3 class="m-b-lg">
+						Top Picks  
+						<button class="label label-default r m-l-xxs p-v-xxs text-success">
+							View 25 more
+							<i class="fa fa-angle-right f-bold"></i>
+						</button> 
+					&nbsp;Links:  
+					<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
+						| 
+					<a href="phone_verification.html">Phone Verification</a>
+						| 
+					<a href="#">Hey</a>
+						| 
+					<a href="#">Wassup</a>
+					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+					</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
+							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
+							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
+							<ul class="carousel1">
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+							</ul>
+					</div>
+					<div class="col-md-3 m-t-lg">
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+						<h3 class="m-b-lg">
+							Top Picks  
+							<button class="label label-default r m-l-xxs p-v-xxs text-success">
+								View 25 more
+								<i class="fa fa-angle-right f-bold"></i>
+							</button> 
+						&nbsp;Links:  
+						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
+						 | 
+						<a href="phone_verification.html">Phone Verification</a>
+						 | 
+						<a href="#">Hey</a>
+						 | 
+						<a href="#">Wassup</a>
+						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+						</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
+							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
+							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
+							<ul class="carousel1">
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Business AnalYtics</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Growth Strategies</h4>
+								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Smarter CommErce</h4>
+								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+									<h4>Market Research</h4>
+							</ul>
+					</div>
+					<div class="col-md-3 m-t-lg">
+					</div>
+				</div>
+			</div>-->
 		</div>
 	</div>
 	<div class="stores container-fluid p">
@@ -328,14 +463,23 @@
 							We are here to help you find your grocery items easily.
 							<br>
 							<br>
-							<b class="text-center" style="display: block;">We have exciting new offers for you. </b>
+							<b class="text-center" style="display: block;">
+								We have exciting new offers for you. 
+								Please confirm your email address by clicking the button below
+								or copy the link and paste in your browser:
+							</b>
+							<a href="#">
+								Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+								tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+								quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commod.
+							</a>
 
 						</div>
 					</div>
 				</div>
 				<div class="modal-footer">
 					<a href="#" class="btn btn-default" data-dismiss="modal"> DISMISS <i class="icon-close f-bold"></i></a>
-					<a href="index.html" target="_blank" class="btn btn-success" >SHOP NOW <i class="fa fa-angle-double-right f-bold"></i></a>
+					<a href="index.html" target="_blank" class="btn btn-success" >CONFIRM EMAIL <i class="fa fa-angle-double-right f-bold"></i></a>
 				</div>
 			</div>
 		</div>

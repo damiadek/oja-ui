@@ -1230,6 +1230,7 @@ h5 {
     border-top-right-radius: 0;
     border: 0!important;
     height: 55px;
+    height: auto;
     font-size: 14px;
     font-weight: 600;
 }
