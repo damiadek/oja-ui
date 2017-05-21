@@ -29,7 +29,7 @@ body{
 }
 body.home{
    background-image: url("../images/groc_.jpg");
-   background-size: 1800px 110%;
+   background-size: 1800px 900px;
    background-position: 0px -100px;
    transition: background-position .4s;
    background-repeat: no-repeat;
@@ -52,13 +52,14 @@ body.home{
 }
 .form-div{
     position: relative;
-    margin-top: 20vh;
+    margin-top: 10vh;
     opacity: 0;
     background: rgba(255,255,255,0.9);
     background: rgba(255,255,255,1);
     padding: 50px;
     padding-top: 10px;
     transition: all .4s;
+    margin-bottom: 20vh;
 }
 .form-div input{
     height: 40px;
@@ -250,7 +251,7 @@ button:disabled{
     text-decoration: none;
 }
 
-/*@media(min-width: 768px){
+@media(min-width: 768px){
     ._banner > img{
         height: 100px;
     }   
@@ -299,7 +300,13 @@ button:disabled{
     ._nav{
         background: transparent;
     }
-}*/
+    .visible-sm{
+        display: block!important;
+    }
+    .form-div{
+        margin-top: 20vh;
+    }
+}
 
 @keyframes panarom{
     0%{
