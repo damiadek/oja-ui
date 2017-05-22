@@ -72,7 +72,7 @@
 					AND <a href="index.html">RELOAD</a> THE PAGE.
 				</noscript>
 				<div class="container-fluid _nav navbar-collapse collapse">
-					<ul class="nav navbar-nav navbar-left text-md">
+					<ul class="nav navbar-nav navbar-left text-md hidden-xs visible-sm">
 						<li class="store_view">
 							<a href="#" class="toggle_stores">
 								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -98,18 +98,52 @@
 											l-11.312-11.313L359.625,346.344z"/>
 									</g>
 								</svg>
-									Stores <i class="fa fa-angle-down"></i>
+								<span class="hidden-xs visible-sm">Store</span> 
+								<i class="fa fa-angle-down"></i>
 								<span class="badge badge-success pull-right f-s-10">new</span>
 							</a>
 						</li>
 					</ul>
 					<ul class="nav navbar-nav navbar-right">
+						<li class="store_view visible-xs hidden-sm">
+							<a href="#" class="toggle_stores">
+								<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+										width="20px" height="13px" viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+									<g>
+										<path class="svg" d="M0,208c0,29.781,20.438,54.594,48,61.75V480H16c-8.813,0-16,7.156-16,16s7.188,16,16,16h480c8.875,0,16-7.156,16-16
+											s-7.125-16-16-16h-32V269.75c27.562-7.156,48-31.969,48-61.75v-16H0V208z M320,272c35.375,0,64-28.656,64-64
+											c0,29.781,20.438,54.594,48,61.75V480H192V272c35.375,0,64-28.656,64-64C256,243.344,284.688,272,320,272z M176,269.75V480H80
+											V269.75c27.563-7.156,48-31.969,48-61.75C128,237.781,148.438,262.594,176,269.75z M448,48H64L0,176h512L448,48z M135.188,83.563
+											l-32,64c-1.438,2.813-4.25,4.438-7.188,4.438c-1.188,0-2.406-0.25-3.563-0.844c-3.938-1.969-5.563-6.781-3.563-10.719l32-64
+											c2-3.938,6.781-5.531,10.719-3.594C135.563,74.813,137.125,79.625,135.188,83.563z M199.188,83.563l-32,64
+											c-1.438,2.813-4.25,4.438-7.188,4.438c-1.188,0-2.406-0.25-3.563-0.844c-3.938-1.969-5.563-6.781-3.563-10.719l32-64
+											c2-3.938,6.813-5.531,10.719-3.594C199.563,74.813,201.125,79.625,199.188,83.563z M264,144c0,4.438-3.562,8-8,8
+											c-4.406,0-8-3.563-8-8V80c0-4.438,3.594-8,8-8c4.438,0,8,3.563,8,8V144z M355.875,151c-1.25,0.688-2.562,1-3.875,1
+											c-2.812,0-5.562-1.5-7-4.156l-35-64c-2.125-3.875-0.688-8.75,3.188-10.844c3.813-2.125,8.75-0.75,10.875,3.156l35,64
+											C361.125,144.031,359.75,148.906,355.875,151z M419.562,151.156C418.438,151.75,417.25,152,416,152
+											c-2.938,0-5.75-1.625-7.125-4.438l-32-64c-2-3.938-0.375-8.75,3.562-10.719c3.875-1.969,8.75-0.375,10.75,3.594l32,64
+											C425.125,144.375,423.562,149.188,419.562,151.156z M136,386.438v-36.875c-4.688-2.812-8-7.688-8-13.562c0-8.844,7.188-16,16-16
+											c8.875,0,16,7.156,16,16c0,5.875-3.281,10.75-8,13.562v36.875c4.719,2.813,8,7.688,8,13.563c0,8.844-7.125,16-16,16
+											c-8.813,0-16-7.156-16-16C128,394.125,131.313,389.25,136,386.438z M64,16c0-8.844,7.188-16,16-16h352c8.875,0,16,7.156,16,16
+											s-7.125,16-16,16H80C71.188,32,64,24.844,64,16z M280.438,357.656l-11.312-11.313l45.25-45.25l11.312,11.313L280.438,357.656z
+											M280.438,402.906l-11.312-11.313l90.5-90.5l11.312,11.313L280.438,402.906z M359.625,346.344l11.312,11.313l-45.25,45.25
+											l-11.312-11.313L359.625,346.344z"/>
+									</g>
+								</svg>
+								<span class="hidden-xs visible-sm">Stores</span>
+								<i class="fa fa-angle-down"></i>
+								<span class="badge badge-success pull-right f-s-10">new</span>
+							</a>
+						</li>
 						<li class="dropdown cart m-r-sm">
 							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="Cart">
-								<i class="icon-basket-loaded bg-n f-s-20"></i>
+								<i class="icon-basket-loaded bg-n"></i>
+								<span class="hidden-xs visible-sm">Cart</span>
 								<span class="badge badge-success pull-right f-s-10">2</span>
 							</a>
 							<ul class="dropdown-menu">
+								<li class="visible-xs hidden-sm text-center "><a class="f-bold text-warning" href="#">Cart</a></li>
+								<li class="divider"></li>
 								<li><a href="#">You have 2 items in your cart</a></li>
 								<li class="divider"></li>
 								<li>
@@ -151,11 +185,14 @@
 						</li>
 						<li class="dropdown list m-r-sm">
 							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="List" >
-								<i class="icon-note bg-n f-s-20"></i>
+								<i class="icon-note bg-n"></i>
+								<span class="hidden-xs visible-sm">List</span>
 								<span class="badge badge-danger pull-right f-s-10">3</span>
 							</a>
 							<ul class="dropdown-menu">
-								<li><a href="#">You have 3 items left on your list</a></li>
+								<li class="visible-xs hidden-sm text-center "><a class="f-bold text-warning" href="#">List</a></li>
+								<li class="divider"></li>
+								<li><a href="#">You have 3 items on your list</a></li>
 								<li class="divider"></li>
 								<li>
 									<a>
@@ -197,8 +234,13 @@
 							</ul>
 						</li>
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown"><i class="fa fa-cog spin-child"></i> My Account <b class="fa fa-angle-down"></b></a>
+							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown">
+								<i class="fa fa-cog spin-child"></i> 
+								<span class="hidden-xs visible-sm">My Account</span>
+							<b class="fa fa-angle-down"></b></a>
 							<ul class="dropdown-menu">
+								<li class="visible-xs hidden-sm text-center "><a class="f-bold text-warning" href="#">My Account</a></li>
+								<li class="divider"></li>
 								<li><a href="#"><i class="fa fa-map-marker text-default"></i>990909</a></li>
 								<li><a href="profile.html"><i class="icon-user text-success"></i>Profile</a></li>
 								<li><a href="#"><i class="fa fa-archive text-default"></i>Orders</a></li>
@@ -215,9 +257,9 @@
 	</div>
 	<div class="container-fluid" style="padding-top: 50px;">
 		<div class="row" style="padding: 150px 0px; background: rgba(0,0,0,0.6);">
-			<div class="col-md-6 col-md-offset-3 p">
+			<div class="col-sm-4 col-sm-offset-4 p">
 				<div class="input-group">
-					<input class="form-control btn-rounded text-lg" type="text" placeholder="Search Oja Express...">
+					<input class="form-control btn-rounded text-lg input-addon-r" type="text" placeholder="Search Oja Express...">
 					<span class="input-group-addon bg-success dark"><i class="fa fa-search"></i></span>
 				</div>
 			</div>
@@ -231,200 +273,108 @@
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-10 col-md-offset-1">
-						<h3 class="m-b-lg">
-							Top Picks  
-							<button class="label label-default r m-l-xxs p-v-xxs text-success">
-								View 25 more
-								<i class="fa fa-angle-right f-bold"></i>
-							</button> 
-						&nbsp;Links:  
-						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-						 | 
-						<a href="phone_verification.html">Phone Verification</a>
-						 | 
-						<a href="#">Hey</a>
-						 | 
-						<a href="#">Wassup</a>
-						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
-						</h3>
-				<div class="panel panel-white">
-					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
-							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
-							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
-							<ul class="carousel carousel_1">
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								</li>
-								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								</li>
-							</ul>
-					</div>
-					<div class="col-md-3 m-t-lg">
-					</div>
-				</div>
-			</div>
-			<div class="col-xs-12 col-md-10 col-md-offset-1">
-						<h3 class="m-b-lg">
-							Top Picks  
-							<button class="label label-default r m-l-xxs p-v-xxs text-success">
-								View 25 more
-								<i class="fa fa-angle-right f-bold"></i>
-							</button> 
-						&nbsp;Links:  
-						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-						 | 
-						<a href="phone_verification.html">Phone Verification</a>
-						 | 
-						<a href="#">Hey</a>
-						 | 
-						<a href="#">Wassup</a>
-						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
-						</h3>
-				<div class="panel panel-white">
-					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
-							<a href="#" class="prev2" class="fa fa-angle-left fa-3x"></a>
-							<a href="#" class="next2" class="fa fa-angle-right fa-3x"></a>
-							<ul class="carousel carousel_2">
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								</li>
-								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								</li>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								</li>
-							</ul>
-					</div>
-					<div class="col-md-3 m-t-lg">
-					</div>
-				</div>
-			</div>
-			<!--<div class="col-xs-12 col-md-10 col-md-offset-1">
-					<h3 class="m-b-lg">
-						Top Picks  
-						<button class="label label-default r m-l-xxs p-v-xxs text-success">
-							View 25 more
-							<i class="fa fa-angle-right f-bold"></i>
-						</button> 
+				<h3 class="m-b-lg">
+					Top Picks  
+					<button class="label label-default r m-l-xxs p-v-xxs text-success">
+						View 25 more
+						<i class="fa fa-angle-right f-bold"></i>
+					</button> 
 					&nbsp;Links:  
+					<a href="dashboard.html">Dashboard</a>
+					| 
 					<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-						| 
+					| 
 					<a href="phone_verification.html">Phone Verification</a>
-						| 
-					<a href="#">Hey</a>
-						| 
+					| 
+					<a href="profile.html">Profile</a>
+					| 
 					<a href="#">Wassup</a>
 					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
 					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
-					</h3>
+				</h3>
 				<div class="panel panel-white">
-					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
-							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
-							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
-							<ul class="carousel1">
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-							</ul>
-					</div>
-					<div class="col-md-3 m-t-lg">
+					<div class="panel-body no-p no-m carousel-wrapper" style="">  
+						<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
+						<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
+						<ul class="_carousel carousel_1">
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Business AnalYtics</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Growth Strategies</h4>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Smarter CommErce</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Market Research</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Business AnalYtics</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Growth Strategies</h4>
+							</li>
+							<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Smarter CommErce</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Market Research</h4>
+							</li>
+						</ul>
 					</div>
 				</div>
 			</div>
 			<div class="col-xs-12 col-md-10 col-md-offset-1">
-						<h3 class="m-b-lg">
-							Top Picks  
-							<button class="label label-default r m-l-xxs p-v-xxs text-success">
-								View 25 more
-								<i class="fa fa-angle-right f-bold"></i>
-							</button> 
-						&nbsp;Links:  
-						<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-						 | 
-						<a href="phone_verification.html">Phone Verification</a>
-						 | 
-						<a href="#">Hey</a>
-						 | 
-						<a href="#">Wassup</a>
-						<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-						<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
-						</h3>
+				<h3 class="m-b-lg">
+					Top Picks  
+					<button class="label label-default r m-l-xxs p-v-xxs text-success">
+						View 25 more
+						<i class="fa fa-angle-right f-bold"></i>
+					</button> 
+					&nbsp;Links:  
+					<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
+					| 
+					<a href="phone_verification.html">Phone Verification</a>
+					| 
+					<a href="#">Hey</a>
+					| 
+					<a href="#">Wassup</a>
+					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+				</h3>
 				<div class="panel panel-white">
-					<div class="panel-body no-p no-m" style="overflow: hidden; height:auto;padding:0; position: relative">  
-							<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
-							<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
-							<ul class="carousel1">
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Business AnalYtics</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Growth Strategies</h4>
-								<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Smarter CommErce</h4>
-								<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-									<h4>Market Research</h4>
-							</ul>
-					</div>
-					<div class="col-md-3 m-t-lg">
+					<div class="panel-body no-p no-m carousel-wrapper">  
+						<a href="#" class="prev2" class="fa fa-angle-left fa-3x"></a>
+						<a href="#" class="next2" class="fa fa-angle-right fa-3x"></a>
+						<ul class="_carousel carousel_2">
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Business AnalYtics</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Growth Strategies</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Smarter CommErce</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Market Research</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Business AnalYtics</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Growth Strategies</h4>
+							</li>
+							<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Smarter CommErce</h4>
+							</li>
+							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
+								<h4>Market Research</h4>
+							</li>
+						</ul>
 					</div>
 				</div>
-			</div>-->
+			</div>
 		</div>
 	</div>
 	<div class="stores container-fluid p">

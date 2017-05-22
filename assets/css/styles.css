@@ -5,12 +5,12 @@ homepage styles
 *{
     font-family: maiandria DG;
 }
-ul {
+ul._carousel {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 }
-ul.carousel li{
+ul._carousel li{
     width: auto!important;
 	padding-left: 20px;
 	padding-right: 20px;
@@ -19,11 +19,18 @@ ul.carousel li{
     color:#000; 
     border-right: dotted 1px #888;
 }
+.panel-body.carousel-wrapper{
+    overflow: hidden; 
+    height: auto;
+    padding: 0; 
+    position: relative; 
+    width: 80vw;
+}
 
 body{
     background: white;
     background: url("../images/groc_.jpg") no-repeat;
-    background-size: 100% 100%;
+    background-size: 100% 120%;
     background-attachment: fixed;
     overflow-x: hidden;
 }
@@ -129,6 +136,7 @@ body.home{
     /*fill: #FFFFFF;*/
 }
 
+/*general*/
 .text-warning{
     color: #F0AD4E;
     color: #FF9151;
@@ -167,6 +175,17 @@ body.home{
 }
 button:disabled{
     opacity: .6;
+}
+.input-addon-r{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+.f-bold{
+    font-weight: bold!important;
+}
+hr.dotted{
+    border-style: dotted;
+    border-color: #eee;
 }
 
 
@@ -301,7 +320,7 @@ button:disabled{
         background: transparent;
     }
     .visible-sm{
-        display: block!important;
+        display: inline-block!important;
     }
     .form-div{
         margin-top: 20vh;
@@ -346,4 +365,38 @@ button:disabled{
     0% {transform:scale(0)}
     50% {transform:scale(1.2)}
     100% {transform:scale(1)}
+}
+
+@media (max-width: 766px){
+    .nav > li > a{
+        display: inline-block!important;
+        float: left;
+    }
+    .nav span.text{
+        display: none;
+    }
+    .nav a{
+        font-size: 25px!important;
+    }
+    .navbar-nav .open .dropdown-menu:before,
+    .navbar-nav .open .dropdown-menu:after{
+        border: none;
+    }
+    .navbar-nav .open .dropdown-menu{
+        position: fixed;
+        top: 100px!important;
+        right: 0;
+        left: 0;
+        background: white;
+        padding: 15px;
+    }
+    svg{
+        width: 25px;
+        height: 25px;
+        fill: #777;
+    }
+
+    ul._carousel li{
+        padding-left: 5px;
+    }
 }

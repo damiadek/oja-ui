@@ -58,7 +58,7 @@ $(document).ready(function(){
 
 
 $(window).load(function(){
-	$.each($('.carousel'), function(i, this_object){
+	$.each($('._carousel'), function(i, this_object){
 		j = i + 1;
 		$(".carousel_" + j).carouFredSel({
             auto: false,
