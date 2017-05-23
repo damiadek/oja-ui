@@ -27,7 +27,7 @@
 
 	<div class="container-fluid">
 		<div class="row">
-			<nav class="col-md-12 navbar navbar-default navbar-fixed-top  b-b" style="background:rgba(255,255,255,1);position: fixed; top:0;" role="navigation">
+			<nav class="col-md-12 navbar navbar-default navbar-fixed-top b-b f-s-16" style="background:rgba(255,255,255,1);position: fixed; top:0;" role="navigation">
 				<div class="navbar-header">
 					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="._nav">
 						<span class="sr-only">Toggle navigation</span>
@@ -35,7 +35,7 @@
 						<span class="icon-bar"></span>
 						<span class="icon-bar"></span>
 					</button>
-					<a href="index.html" class="navbar-brand page_scroll text-warning no-p">
+					<a href="index.html" class="navbar-brand page_scroll text-warning no-p text-fancy f-s-32">
 						<img src="../assets/images/logo.png" height="50" alt="OjaExpress">
 						OjaExpress
 					</a>
@@ -135,10 +135,16 @@
 								<span class="badge badge-success pull-right f-s-10">new</span>
 							</a>
 						</li>
+						<li class="m-r-sm hidden-xs visible-sm">
+							<a href="#"><i class="fa fa-map-marker"></i> 990909</a>
+						</li>
 						<li class="dropdown cart m-r-sm">
 							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="Cart">
 								<i class="icon-basket-loaded bg-n"></i>
-								<span class="hidden-xs visible-sm">Cart</span>
+								<span class="hidden-xs visible-sm">
+									Cart
+								</span>
+								<b class="fa fa-angle-down"></b>
 								<span class="badge badge-success pull-right f-s-10">2</span>
 							</a>
 							<ul class="dropdown-menu">
@@ -186,7 +192,10 @@
 						<li class="dropdown list m-r-sm">
 							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="List" >
 								<i class="icon-note bg-n"></i>
-								<span class="hidden-xs visible-sm">List</span>
+								<span class="hidden-xs visible-sm">
+									List 
+								</span>
+								<b class="fa fa-angle-down"></b>
 								<span class="badge badge-danger pull-right f-s-10">3</span>
 							</a>
 							<ul class="dropdown-menu">
@@ -237,7 +246,8 @@
 							<a href="#" class="dropdown-toggle spin" data-toggle="dropdown">
 								<i class="fa fa-cog spin-child"></i> 
 								<span class="hidden-xs visible-sm">My Account</span>
-							<b class="fa fa-angle-down"></b></a>
+								<b class="fa fa-angle-down"></b>
+							</a>
 							<ul class="dropdown-menu">
 								<li class="visible-xs hidden-sm text-center "><a class="f-bold text-warning" href="#">My Account</a></li>
 								<li class="divider"></li>
@@ -256,7 +266,7 @@
 		</div>
 	</div>
 	<div class="container-fluid" style="padding-top: 50px;">
-		<div class="row" style="padding: 150px 0px; background: rgba(0,0,0,0.6);">
+		<div class="row search_banner">
 			<div class="col-sm-4 col-sm-offset-4 p">
 				<div class="input-group">
 					<input class="form-control btn-rounded text-lg input-addon-r" type="text" placeholder="Search Oja Express...">
@@ -264,9 +274,36 @@
 				</div>
 			</div>
 		</div>
-		<div class="row bg-light p" style="min-height: 100vh;">
-
-			<div class="col-md-10 col-md-offset-1">
+		<div class="row bg-light " style="min-height: 100vh;">
+			
+			<nav class="col-md-12 navbar f-s-16 fixed-nav" role="navigation" data-spy="affix" data-offset-top="365">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="._nav2">
+						<span class="fa fa-angle-down fa-3x"></span>
+					</button>
+					<a href="index.html" class="navbar-brand page_scroll no-p">
+						<img src="../assets/images/sur.png" height="40" alt="SurLaTable">
+						<span class="f-s-18" style="font-family: cursive; vertical-align: middle;">Sur La Table</span>
+					</a>
+				</div>
+				<div class="container-fluid _nav2 navbar-right navbar-collapse collapse text-center bg-white f-bold">
+					<ul class="nav navbar-nav text-md"> 
+						<li>
+							<a href="dashboard.html">Dashboard</a>
+						</li>
+						<li>
+							<a href="profile.html">Profile</a>
+						</li>
+						<li>
+							<a href="grocery_item_crud.html">Grocery item</a>
+						</li>
+					</ul>
+					<ul class="nav navbar-nav">
+					</ul>
+				</div>
+			</nav>
+			
+			<div class="col-xs-12 col-md-10 col-md-offset-1 m-t-md">
 				<div class="alert alert-success alert-dismissible r-5" role="alert">
 				<button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">×</span></button>
 					Hello, your profile is <b class="text-danger">30%</b> complete, please click <a>here</a> to update it.
@@ -279,46 +316,103 @@
 						View 25 more
 						<i class="fa fa-angle-right f-bold"></i>
 					</button> 
-					&nbsp;Links:  
-					<a href="dashboard.html">Dashboard</a>
-					| 
-					<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-					| 
-					<a href="phone_verification.html">Phone Verification</a>
-					| 
-					<a href="profile.html">Profile</a>
-					| 
-					<a href="#">Wassup</a>
 					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
 					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
 				</h3>
 				<div class="panel panel-white">
-					<div class="panel-body no-p no-m carousel-wrapper" style="">  
+					<div class="panel-body no-p no-m carousel-wrapper">  
 						<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
 						<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
 						<ul class="_carousel carousel_1">
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Business AnalYtics</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Growth Strategies</h4>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Smarter CommErce</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Market Research</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Business AnalYtics</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Growth Strategies</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Smarter CommErce</h4>
-							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Market Research</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -331,14 +425,6 @@
 						View 25 more
 						<i class="fa fa-angle-right f-bold"></i>
 					</button> 
-					&nbsp;Links:  
-					<a href="#" data-toggle="modal" data-target=".email_template">Email Template</a>
-					| 
-					<a href="phone_verification.html">Phone Verification</a>
-					| 
-					<a href="#">Hey</a>
-					| 
-					<a href="#">Wassup</a>
 					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
 					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
 				</h3>
@@ -347,29 +433,204 @@
 						<a href="#" class="prev2" class="fa fa-angle-left fa-3x"></a>
 						<a href="#" class="next2" class="fa fa-angle-right fa-3x"></a>
 						<ul class="_carousel carousel_2">
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Business AnalYtics</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Growth Strategies</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Smarter CommErce</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Market Research</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Business AnalYtics</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Growth Strategies</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li class="grid_3"> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Smarter CommErce</h4>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<h3 class="m-b-lg">
+					Featured Products  
+					<button class="label label-default r m-l-xxs p-v-xxs text-success">
+						View 105 more
+						<i class="fa fa-angle-right f-bold"></i>
+					</button> 
+					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+				</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m carousel-wrapper">  
+						<a href="#" class="prev3" class="fa fa-angle-left fa-3x"></a>
+						<a href="#" class="next3" class="fa fa-angle-right fa-3x"></a>
+						<ul class="_carousel carousel_3">
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
-							<li> <img src="../assets/images/smoked-goat_1.jpg" alt="">
-								<h4>Market Research</h4>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
 							</li>
 						</ul>
 					</div>
@@ -395,7 +656,7 @@
 			<div class="modal-content" style="color:#555;">
 				<div class="modal-body text-left">
 					<div class="row">
-						<div class="col-md-12 f-s-28 m-t-n-xxs text-center">
+						<div class="col-md-12 f-s-28 m-t-n-xxs text-center text-fancy">
 							<button type="button" class="close" data-dismiss="modal">&times;</button>
 							<img src="../assets/images/logo.png" height="100px"> OjaExpress
 						</div>
@@ -409,7 +670,7 @@
 						<div class="col-md-12 f-s-16">
 							<br>
 							<b class="text-success">Hello Adek,</b><br>
-							We at <a href="index.html" class="f-bold">OjaExpress</a> are happy to have you with us.
+							We at <a href="index.html" class="f-bold text-fancy f-s-24">OjaExpress</a> are happy to have you with us.
 							We are here to help you find your grocery items easily.
 							<br>
 							<br>

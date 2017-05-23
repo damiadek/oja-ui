@@ -34,7 +34,8 @@ $(document).ready(function(){
 	});
 
 	// close function
-	$(".toggle_stores").click(function(){
+	$(".toggle_stores").click(function(e){
+		e.preventDefault();
 		$(".stores").toggleClass("open");
 	});
 
