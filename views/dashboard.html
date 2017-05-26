@@ -24,6 +24,22 @@
         </div>
         <div style="clear:both"></div>
     </div>
+	
+	<div class="input-group search-field bg-white">
+		<input class="form-control btn-rounded text-lg input-addon-r search-input" type="text" placeholder="Search Oja Express...">
+		<span class="input-group-addon bg-success dark"><i class="fa fa-search"></i></span>
+		<span class="pull-right m-r-sm f-s-22 search_toggle" style="cursor: pointer;" title="close">
+			x
+		</span>
+		<div class="search-results bg-white full-width p-v-xs r-5 f-s-18">
+			<ul>
+				<li class="no-hover b-b b-default text-muted">Popular Items</li>
+				<li>item 1</li>
+				<li>item 2</li>
+				<li>item 3</li>
+			</ul>
+		</div>
+	</div>
 
 	<div class="container-fluid">
 		<div class="row">
@@ -135,11 +151,11 @@
 								<span class="badge badge-success pull-right f-s-10">new</span>
 							</a>
 						</li>
-						<li class="m-r-sm hidden-xs visible-sm">
+						<li class="hidden-xs visible-sm">
 							<a href="#"><i class="fa fa-map-marker"></i> 990909</a>
 						</li>
-						<li class="dropdown cart m-r-sm">
-							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="Cart">
+						<li class=" cart">
+							<a href="#" class="dropdown-toggle toggle_cart " data-toggle="dropdown" data-placement="bottom" title="Cart">
 								<i class="icon-basket-loaded bg-n"></i>
 								<span class="hidden-xs visible-sm">
 									Cart
@@ -147,50 +163,9 @@
 								<b class="fa fa-angle-down"></b>
 								<span class="badge badge-success pull-right f-s-10">2</span>
 							</a>
-							<ul class="dropdown-menu">
-								<li class="visible-xs hidden-sm text-center "><a class="f-bold text-warning" href="#">Cart</a></li>
-								<li class="divider"></li>
-								<li><a href="#">You have 2 items in your cart</a></li>
-								<li class="divider"></li>
-								<li>
-									<a>
-										Item 1
-										<span class="pull-right">
-											<i class="fa fa-dollar"></i>20
-											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
-										</span>
-									</a>
-								</li>
-								<li>
-									<a>
-										Item 1
-										<span class="pull-right">
-											<i class="fa fa-dollar"></i>20
-											<i class="fa fa-trash text-danger tip del_order" data-toggle="tooltip" title="delete order"></i>
-										</span>
-									</a>
-								</li>
-								<li class="divider"></li>
-								<li>
-									<a>
-										Total
-										<span class="pull-right">
-											<i class="fa fa-dollar"></i>26
-											<i class="fa fa-money text-success"></i>
-										</span>
-									</a>
-								</li>
-								<li>
-									<a>
-										<button class="btn btn-block btn-success">
-											CHECKOUT  <i class="fa fa-hand-o-right"></i>
-										</button>
-									</a>
-								</li>
-							</ul>
 						</li>
-						<li class="dropdown list m-r-sm">
-							<a href="#" class="dropdown-toggle tip" data-toggle="dropdown" data-placement="bottom" title="List" >
+						<li class="dropdown list">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">
 								<i class="icon-note bg-n"></i>
 								<span class="hidden-xs visible-sm">
 									List 
@@ -260,20 +235,28 @@
 								<li><a href="index.html"><i class="icon-close text-danger"></i>Logout</a></li>
 							</ul>
 						</li>
+						<li>
+							<a class="search_toggle"><i class="fa fa-search" title="search"></i></a>
+						</li>
 					</ul>
 				</div>
 			</nav>
 		</div>
 	</div>
+
+	
 	<div class="container-fluid" style="padding-top: 50px;">
+		
+		
+		<div class="blanket">
+
+		</div>
+
 		<div class="row search_banner">
-			<div class="col-sm-4 col-sm-offset-4 p">
-				<div class="input-group">
-					<input class="form-control btn-rounded text-lg input-addon-r" type="text" placeholder="Search Oja Express...">
-					<span class="input-group-addon bg-success dark"><i class="fa fa-search"></i></span>
-				</div>
+			<div class="col-md-4 col-md-offset-4 p">
 			</div>
 		</div>
+
 		<div class="row bg-light " style="min-height: 100vh;">
 			
 			<nav class="col-md-12 navbar f-s-16 fixed-nav" role="navigation" data-spy="affix" data-offset-top="365">
@@ -286,7 +269,7 @@
 						<span class="f-s-18" style="font-family: cursive; vertical-align: middle;">Sur La Table</span>
 					</a>
 				</div>
-				<div class="container-fluid _nav2 navbar-right navbar-collapse collapse text-center bg-white f-bold">
+				<div class="container-fluid _nav2 navbar-right navbar-collapse collapse text-center bg-white">
 					<ul class="nav navbar-nav text-md"> 
 						<li>
 							<a href="dashboard.html">Dashboard</a>
@@ -316,13 +299,14 @@
 						View 25 more
 						<i class="fa fa-angle-right f-bold"></i>
 					</button> 
-					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+					<!--<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>-->
 				</h3>
 				<div class="panel panel-white">
-					<div class="panel-body no-p no-m carousel-wrapper">  
-						<a href="#" class="prev1" class="fa fa-angle-left fa-3x"></a>
-						<a href="#" class="next1" class="fa fa-angle-right fa-3x"></a>
+					<div class="panel-body no-p no-m carousel-wrapper">
+						<a href="#" class="prev1 carousel-control left" class="fa fa-angle-left fa-3x"><span class="fa fa-angle-left"></span></a>
+						<a href="#" class="next1 carousel-control right" class="fa fa-angle-right fa-3x"><span class="fa fa-angle-right"></span></a>
+						  
 						<ul class="_carousel carousel_1">
 							<li class="product-img p"> 
 								<div class="product-hover">
@@ -425,13 +409,13 @@
 						View 25 more
 						<i class="fa fa-angle-right f-bold"></i>
 					</button> 
-					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+					<!--<button class="btn btn-sm btn-success btn-rounded next2 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev2 pull-right"><span class="fa fa-angle-left"></span> </button>-->
 				</h3>
 				<div class="panel panel-white">
 					<div class="panel-body no-p no-m carousel-wrapper">  
-						<a href="#" class="prev2" class="fa fa-angle-left fa-3x"></a>
-						<a href="#" class="next2" class="fa fa-angle-right fa-3x"></a>
+						<a href="#" class="prev2 carousel-control left" class="fa fa-angle-left fa-3x"><span class="fa fa-angle-left"></span></a>
+						<a href="#" class="next2 carousel-control right" class="fa fa-angle-right fa-3x"><span class="fa fa-angle-right"></span></a>
 						<ul class="_carousel carousel_2">
 							<li class="product-img p"> 
 								<div class="product-hover">
@@ -445,7 +429,67 @@
 									<i class="icon-basket-loaded" title="Add to cart"></i>
 								</div>
 								<div class="full-width no-p m-t-sm">
-									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+									<div class="text-left f-s-18">Smoked Meat 1<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 3<br><b class="f-s-16 text-warning">$25</b></div>
 								</div>
 							</li>
 							<li class="product-img p"> 
@@ -475,7 +519,7 @@
 									<i class="icon-basket-loaded" title="Add to cart"></i>
 								</div>
 								<div class="full-width no-p m-t-sm">
-									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+									<div class="text-left f-s-18">Smoked Meat 5<br><b class="f-s-16 text-warning">$25</b></div>
 								</div>
 							</li>
 							<li class="product-img p"> 
@@ -490,37 +534,7 @@
 									<i class="icon-basket-loaded" title="Add to cart"></i>
 								</div>
 								<div class="full-width no-p m-t-sm">
-									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
-								</div>
-							</li>
-							<li class="product-img p"> 
-								<div class="product-hover">
-									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
-									<h4>Product Details</h4>
-								</div>
-								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
-								
-								<div class="pull-right f-s-18 icons">
-									<i class="fa fa-heart" title="Favorite"></i>
-									<i class="icon-basket-loaded" title="Add to cart"></i>
-								</div>
-								<div class="full-width no-p m-t-sm">
-									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
-								</div>
-							</li>
-							<li class="product-img p"> 
-								<div class="product-hover">
-									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
-									<h4>Product Details</h4>
-								</div>
-								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
-								
-								<div class="pull-right f-s-18 icons">
-									<i class="fa fa-heart" title="Favorite"></i>
-									<i class="icon-basket-loaded" title="Add to cart"></i>
-								</div>
-								<div class="full-width no-p m-t-sm">
-									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+									<div class="text-left f-s-18">Smoked Meat 6<br><b class="f-s-16 text-warning">$25</b></div>
 								</div>
 							</li>
 						</ul>
@@ -529,18 +543,18 @@
 			</div>
 			<div class="col-xs-12 col-md-10 col-md-offset-1">
 				<h3 class="m-b-lg">
-					Featured Products  
+					Top Picks  
 					<button class="label label-default r m-l-xxs p-v-xxs text-success">
-						View 105 more
+						View 25 more
 						<i class="fa fa-angle-right f-bold"></i>
 					</button> 
-					<button class="btn btn-sm btn-success btn-rounded next1 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
-					<button class="btn btn-sm btn-success btn-rounded prev1 pull-right"><span class="fa fa-angle-left"></span> </button>
+					<!--<button class="btn btn-sm btn-success btn-rounded next2 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev2 pull-right"><span class="fa fa-angle-left"></span> </button>-->
 				</h3>
 				<div class="panel panel-white">
 					<div class="panel-body no-p no-m carousel-wrapper">  
-						<a href="#" class="prev3" class="fa fa-angle-left fa-3x"></a>
-						<a href="#" class="next3" class="fa fa-angle-right fa-3x"></a>
+						<a href="#" class="prev3 carousel-control left" class="fa fa-angle-left fa-3x"><span class="fa fa-angle-left"></span></a>
+						<a href="#" class="next3 carousel-control right" class="fa fa-angle-right fa-3x"><span class="fa fa-angle-right"></span></a>
 						<ul class="_carousel carousel_3">
 							<li class="product-img p"> 
 								<div class="product-hover">
@@ -554,6 +568,282 @@
 									<i class="icon-basket-loaded" title="Add to cart"></i>
 								</div>
 								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 1<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 3<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 5<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 6<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<h3 class="m-b-lg">
+					Top Picks  
+					<button class="label label-default r m-l-xxs p-v-xxs text-success">
+						View 25 more
+						<i class="fa fa-angle-right f-bold"></i>
+					</button> 
+					<!--<button class="btn btn-sm btn-success btn-rounded next2 pull-right m-l-xs"> <span class="fa fa-angle-right"></span></button>
+					<button class="btn btn-sm btn-success btn-rounded prev2 pull-right"><span class="fa fa-angle-left"></span> </button>-->
+				</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m carousel-wrapper">  
+						<a href="#" class="prev4 carousel-control left" class="fa fa-angle-left fa-3x"><span class="fa fa-angle-left"></span></a>
+						<a href="#" class="next4 carousel-control right" class="fa fa-angle-right fa-3x"><span class="fa fa-angle-right"></span></a>
+						<ul class="_carousel carousel_4">
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 1<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 2<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 3<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 5<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/smoked-goat_1.jpg"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/smoked-goat_1.jpg" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
+									<div class="text-left f-s-18">Smoked Meat 6<br><b class="f-s-16 text-warning">$25</b></div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--<div class="col-xs-12 col-md-10 col-md-offset-1">
+				<h3 class="m-b-lg">
+					Top Picks  
+					<button class="label label-default r m-l-xxs p-v-xxs text-success">
+						View 25 more
+						<i class="fa fa-angle-right f-bold"></i>
+					</button> 
+				</h3>
+				<div class="panel panel-white">
+					<div class="panel-body no-p no-m carousel-wrapper" style="position:relative;right:0;left:0;height:300px;">  
+						<a href="#" class="prev carousel-control left" class="fa fa-angle-left fa-3x"><span class="fa fa-angle-left"></span></a>
+						<a href="#" class="next carousel-control right" class="fa fa-angle-right fa-3x"><span class="fa fa-angle-right"></span></a>
+						<ul class="_carousel" items="6" style="position:absolute;left:0;height:300px;width:2000px;">
+							<li class="product-img p"> 
+								<div class="product-hover">
+									<a href="../assets/images/sur.png"><i class="fa fa-search"></i></a>
+									<h4>Product Details</h4>
+								</div>
+								<img src="../assets/images/sur.png" style="width: 200px;" alt="">
+								
+								<div class="pull-right f-s-18 icons">
+									<i class="fa fa-heart" title="Favorite"></i>
+									<i class="icon-basket-loaded" title="Add to cart"></i>
+								</div>
+								<div class="full-width no-p m-t-sm">
 									<div class="text-left f-s-18">Smoked Meat 4<br><b class="f-s-16 text-warning">$25</b></div>
 								</div>
 							</li>
@@ -635,7 +925,7 @@
 						</ul>
 					</div>
 				</div>
-			</div>
+			</div>-->
 		</div>
 	</div>
 	<div class="stores container-fluid p">
@@ -644,6 +934,234 @@
 				<button class="btn btn-warning btn-rounded btn-lg toggle_stores tip"  data-toggle="tooltip" data-placement="bottom" title="Close">
 					<i class="text- fa fa-angle-up fa-3x"></i>
 				</button>
+			</div>
+		</div>
+
+	</div>
+	<div class="full-cart container-fluid p">
+		<div class="row p-v-xxl">
+			<div class="col-xs-12 col-sm-8 col-sm-offset-2 bg-white r-5 m-t-xxl p cart-items-parent">
+				<div class="m-b-sm f-s-28 b-b p-v-xs">
+					<span class="">Your Cart</span>
+					<button class="btn btn-default btn-lg toggle_cart pull-right m-r-lg" style="z-index: 9100;" title="Close">
+						Close
+					</button>
+				</div>	
+				<div class="cart-items-wrapper p-h-xs">
+					<div class="bg-light light bs-light r-5 cart-item m-b-lg">
+						<div class="panel-heading bg-light dark">
+							<h3 class="panel-title">
+								<img src="../assets/images/sur.png" height="40" alt="SurLaTable">
+								Sur La Table
+								<span class="panel-control pull-right m-t-sm">
+									<span class="label translucent p-v-xxs p-h-xxs">$125</span>
+								</span>
+							</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table table-hover table-condensed table-bordered">
+								<thead>
+									<tr class="bg-light">
+										<th>Item</th>
+										<th>Unit Price($)</th>
+										<th>Qty</th>
+										<th>Total($)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Rice</td>
+										<td>20</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>40</td>
+									</tr>
+									<tr>
+										<td>Beans</td>
+										<td>40</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>80</td>
+									</tr>
+									<tr>
+										<td>Red Onion</td>
+										<td>1</td>
+										<td>
+											<input type="number" value="5" style="width:70px;"/>
+											<b>bulbs</b>
+										</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+					</div>
+					<div class="bg-light light bs-light r-5 cart-item m-b-lg">
+						<div class="panel-heading bg-light dark">
+							<h3 class="panel-title">
+								<img src="../assets/images/sur.png" height="40" alt="SurLaTable">
+								Sur La Table
+								<span class="panel-control pull-right m-t-sm">
+									<span class="label translucent p-v-xxs p-h-xxs">$125</span>
+								</span>
+							</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table table-hover table-condensed table-bordered">
+								<thead>
+									<tr class="bg-light">
+										<th>Item</th>
+										<th>Unit Price($)</th>
+										<th>Qty</th>
+										<th>Total($)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Rice</td>
+										<td>20</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>40</td>
+									</tr>
+									<tr>
+										<td>Beans</td>
+										<td>40</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>80</td>
+									</tr>
+									<tr>
+										<td>Red Onion</td>
+										<td>1</td>
+										<td>
+											<input type="number" value="5" style="width:70px;"/>
+											<b>bulbs</b>
+										</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+					</div>
+					<div class="bg-light light bs-light r-5 cart-item m-b-lg">
+						<div class="panel-heading bg-light dark">
+							<h3 class="panel-title">
+								<img src="../assets/images/sur.png" height="40" alt="SurLaTable">
+								Sur La Table
+								<span class="panel-control pull-right m-t-sm">
+									<span class="label translucent p-v-xxs p-h-xxs">$125</span>
+								</span>
+							</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table table-hover table-condensed table-bordered">
+								<thead>
+									<tr class="bg-light">
+										<th>Item</th>
+										<th>Unit Price($)</th>
+										<th>Qty</th>
+										<th>Total($)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Rice</td>
+										<td>20</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>40</td>
+									</tr>
+									<tr>
+										<td>Beans</td>
+										<td>40</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>80</td>
+									</tr>
+									<tr>
+										<td>Red Onion</td>
+										<td>1</td>
+										<td>
+											<input type="number" value="5" style="width:70px;"/>
+											<b>bulbs</b>
+										</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+					</div>
+					<div class="bg-light light bs-light r-5 cart-item m-b-lg">
+						<div class="panel-heading bg-light dark">
+							<h3 class="panel-title">
+								<img src="../assets/images/sur.png" height="40" alt="SurLaTable">
+								Sur La Table
+								<span class="panel-control pull-right m-t-sm">
+									<span class="label translucent p-v-xxs p-h-xxs">$125</span>
+								</span>
+							</h3>
+						</div>
+						<div class="panel-body table-responsive">
+							<table class="table table-hover table-condensed table-bordered">
+								<thead>
+									<tr class="bg-light">
+										<th>Item</th>
+										<th>Unit Price($)</th>
+										<th>Qty</th>
+										<th>Total($)</th>
+									</tr>
+								</thead>
+								<tbody>
+									<tr>
+										<td>Rice</td>
+										<td>20</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>40</td>
+									</tr>
+									<tr>
+										<td>Beans</td>
+										<td>40</td>
+										<td>
+											<input type="number" value="2" style="width:70px;"/>
+											<b>bags</b>
+										</td>
+										<td>80</td>
+									</tr>
+									<tr>
+										<td>Red Onion</td>
+										<td>1</td>
+										<td>
+											<input type="number" value="5" style="width:70px;"/>
+											<b>bulbs</b>
+										</td>
+										<td>5</td>
+									</tr>
+								</tbody>
+							</table>							
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-xs-12 col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4 p-v-xs">
+						<button class="btn btn-block btn-warning btn-lg">Checkout <span class="pull-right translucent p-v-xxs p-h-xxs">$500</span></button>
+					</div>
+				</div>
 			</div>
 		</div>
 

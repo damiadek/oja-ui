@@ -28,3 +28,12 @@ function countdown(element){
     }, 1000);
     int_;
 }
+
+// use backdrop
+function blockUI(){
+    $(".blanket").fadeIn();
+}
+
+function unblockUI(){
+    $(".blanket").fadeOut();
+}
