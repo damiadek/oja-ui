@@ -1,0 +1,26 @@
+.full-cart{
+    position: fixed;
+    z-index: ($base-index * 90);
+    background: transparentize($white-bg, 0.8);
+    width: $full-width;
+    height: $full-height;
+    @include transition($base-transition);
+    @include transition(background-color 2s);
+    left: 0;
+    right: 0;
+    bottom: -100%;
+    *{
+        display: none;
+    }
+    th, td{
+        text-align: center;
+    }
+    &.open{
+        bottom: 0;
+        background: transparentize($dark-bg, 0.8);
+    }
+}
+.cart-items-wrapper{
+    height: 60vh;
+    overflow-y: auto;
+}

@@ -1,0 +1,8 @@
+@mixin padding-horizontal($value) {
+	padding-left: $value;
+	padding-right: $value;
+}
+@mixin padding-vertical($value) {
+	padding-top: $value;
+	padding-right: $value;
+}

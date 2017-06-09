@@ -1,0 +1,13 @@
+.stores{
+    @extend .full-cart;
+    bottom: 0;
+    top: -100%;
+    &.open{
+        top: 0;
+        background: transparentize($white-bg, 0.8);
+    }
+}
+.store_name{
+    width: 20px;
+    overflow: hidden;
+}

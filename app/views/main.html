@@ -1,0 +1,17 @@
+<div class="bg-light light">
+  <div class="jumbotron">
+    <h1>'Allo, 'Allo!</h1>
+    <p class="lead">
+      <img src="images/logo.png" alt="I'm OjaExpress">
+      <span class="text-fancy f-32">OjaExpress</span>
+      <br>
+      Always a pleasure scaffolding your apps.
+    </p>
+    <p><a class="btn btn-lg btn-success" ng-click="loggedIn = true; go('/location')">Search for Stores!<span class="glyphicon glyphicon-ok"></span></a></p>
+  </div>
+
+  <div class="row marketing" ng-repeat="item in items">
+    <h4>{{item.title}}</h4>
+    <p>{{item.content}}</p>
+  </div>
+</div>

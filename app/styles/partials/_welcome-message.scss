@@ -1,0 +1,34 @@
+.welcome-message-wrapper{
+    display: none;
+    position: fixed;
+    right: 10px;
+    top: 100px;
+    width: 250px;
+    z-index: ($base-index) * 90;
+    $welcome-green : rgb(32, 162, 94);
+    background: transparentize($welcome-green, 0.5);
+    color: #fff;
+    padding: 10px;
+    border-radius: 3px;
+}
+.welcome-message{
+    float: left;
+    width: 150px;
+    display: block;
+}
+.welcome-close {
+    position: absolute;
+    right: 5px;
+    top: -1px;
+    color: #eee;
+    padding: 0px 2px;
+    @include transition(all .3s ease-in);
+    font-size: 30px;
+    font-weight: 20px;
+
+    &:hover, &:active, &:visited, &:focus {
+        color: #fff;
+        text-decoration: none;
+    }
+}
+

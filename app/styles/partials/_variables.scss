@@ -1,0 +1,55 @@
+$body-bg-image: "url('../images/groc_.jpg') no-repeat";
+// font family
+$font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+//fancy font
+$fancy-text-family : 'stalemate';
+$fancy-text-url: '../fonts/Stalemate-Regular.ttf';
+// transition 
+$base-transition:  unquote("all .4s");
+// fancy text
+$fancy-text: unquote("'stalemate' !important");
+// white background
+$white-bg: rgba(255,255,255,1);
+// dark background
+$dark-bg: rgba(0,0,0,1);
+// full-height
+$full-height: 100%;
+// full-width
+$full-width: 100vw;
+// index
+$base-index: 100;
+
+/*font size*/
+$base-font-size: 13px;
+$base-font-weight: 300;
+
+$base-font-color: #4E5E6A;
+$dark-font-color: #777;
+
+$success-color : #14B560;
+$success-bg : $success-color;
+$yellow-color: #FFB74D;
+$yellow-bg: $yellow-color;
+$primary-color: #12879C;
+$primary-bg: $primary-color;
+$warning-color: #FF9151;
+$warning-bg: $warning-color;
+$info-color: #12AFCB;
+$info-bg: $info-color;
+$danger-color: #f25656;
+$danger-bg: $danger-color;
+$default-color: #777777;
+$default-bg: $default-color;
+$font-color: #ffffff;
+
+/*theme colors*/
+$primary-theme-color: $success-color;
+$secondary-theme-color: $warning-color;
+$accent-theme-color: $danger-color;
+
+/*navbar*/
+$nav-bg: $white-bg;
+
+/*carousel*/
+$carousel-control-bg: #fff;
+

@@ -1,0 +1,50 @@
+._nav{
+    background: $nav-bg;
+}
+.navbar {
+    .dropdown{
+        display: block;
+    }
+    a {
+        color:  $navbar-default-link-color!important;
+        &:focus, &:hover {
+            color: $navbar-default-link-color!important;
+        }
+    }
+}
+
+.navbar-brand img{
+    display: inline;
+}
+
+.store_view{
+    &:hover{
+        @include animation(none);
+    }
+    .badge{
+        @include animation(pulse 1s 6);
+    }
+}
+
+.svg{
+    @include transition($base-transition);
+}
+
+.fixed-nav {
+    width: 100%;
+    @include padding-horizontal(5px!important);
+    background: $white-bg;
+    z-index: $base-index * 7;
+    box-shadow: 0px 1px 4px transparentize($dark-bg, .8);
+
+    &.affix {
+        top: 58px;
+        position: fixed;
+        padding-left: 5px;
+
+        .navbar-toggle {
+            padding: 0;
+            margin-bottom: 0;
+        }
+    }
+}

@@ -1,0 +1,30 @@
+/* Alert */
+
+.alert {
+    border-radius: 0;
+    @include padding-vertical(10px);
+    border: 0;
+}
+
+.alert-success {
+    @extend .alert;
+    background: lighten($success-color, 70%);
+}
+
+.alert-info {
+    @extend .alert;
+    background: lighten($info-color, 70%);
+}
+
+.alert-warning {
+    @extend .alert;
+    background: lighten($warning-color, 70%);    
+}
+
+.alert-danger {
+    @extend .alert;
+    background: lighten($danger-color, 70%);    
+}
+.alert-dismissable .close, .alert-dismissible .close {
+    right: 0;
+}

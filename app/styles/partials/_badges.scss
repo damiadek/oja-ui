@@ -1,0 +1,64 @@
+/* Custom Badges */
+
+.badge {
+    -webkit-border-radius: 12px !important;
+    -moz-border-radius: 12px !important;
+    border-radius: 12px !important;
+    font-weight: $base-font-weight;
+    font-size: 11px !important;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 11px;
+    height: 18px;
+    padding: 3px 6px 3px 6px;
+    text-shadow: none !important;
+
+    &.badge-roundless {
+        -webkit-border-radius: 0 !important;
+        -moz-border-radius: 0 !important;
+        border-radius: 0 !important;
+    }
+
+    &.badge-default {
+        background: #f1f1f1;
+        color: #aaa;
+    }
+
+    &.badge-primary {
+        background: $primary-color;
+        color: #FFF;
+    }
+
+    &.badge-info {
+        background: $info-color;
+        color: #FFF;
+    }
+
+    &.badge-success {
+        background: $success-color;
+        color: #FFF;
+    }
+
+    &.badge-danger {
+        background: $danger-color;
+        color: #FFF;
+    }
+
+    &.badge-warning {
+        background: $warning-color;
+        color: #FFF;
+    }
+}
+
+// badges
+.badge {
+    &.pull-right {
+        position: absolute;
+        top: 3px;
+        right: -1px;
+    }
+
+    &.badge-success {
+        background: darken($success-color, 20%);
+    }
+}

@@ -1,0 +1,76 @@
+/*scroll down button on home page*/
+.down_arrow{
+    position: absolute;
+    bottom: 0px;
+}
+.more{
+    @extend .down_arrow;
+    left: 42%;
+    width: 16%;
+    @include animation(pulse 4s infinite);
+    opacity: 1;
+    font-size: 30px;
+    background: transparentize($dark-bg, .6);
+    color: ($white-bg - #333333); 
+    @include transition($base-transition);
+    border-radius: 100%;
+    &:hover{
+        color: ($dark-bg + #777777);
+        @include animation(none);
+        @include scale(1.1);
+    }
+}
+
+/*landing page*/
+.landing-div{
+  min-height: $full-height;
+  background: darken($white-bg, 2%);
+}
+
+/*form divs*/
+.form-div {
+  position: relative;
+  margin: {
+    top: 10vh;
+    bottom: 20vh;
+  }
+  // opacity: 0;
+  background: $white-bg;
+  padding: 50px;
+  padding-top: 10px;
+  @include transition($base-transition);
+
+  input {
+    height: 40px;
+
+    &.btn {
+      font: {
+      	weight: bold;
+      	size: 17px;
+      }
+
+    }
+
+    &.form-control {
+      background: transparentize($white-bg, .4);
+      @include transition($base-transition);
+      font-size: 15px;
+
+      &:focus {
+        background: $white-bg;
+        @include transition($base-transition);
+      }
+    }
+  }
+
+  fieldset {
+    // position: absolute;
+    top: 0;
+    // display: none;
+
+    &.active {
+      position: relative;
+      display: block;
+    }
+  }
+}

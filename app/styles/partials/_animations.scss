@@ -1,0 +1,134 @@
+
+
+@keyframes panarom{
+    0%{
+        background-position-x: 0px; 
+    }
+    50%{
+        background-position-x: -100px; 
+    }
+    100%{
+        background-position-x: 0px; 
+    }
+}
+@-moz-keyframes panarom{
+    0%{
+        background-position-x: 0px; 
+    }
+    50%{
+        background-position-x: -100px; 
+    }
+    100%{
+        background-position-x: 0px; 
+    }
+}
+@-o-keyframes panarom{
+    0%{
+        background-position-x: 0px; 
+    }
+    50%{
+        background-position-x: -100px; 
+    }
+    100%{
+        background-position-x: 0px; 
+    }
+}
+@-ms-keyframes panarom{
+    0%{
+        background-position-x: 0px; 
+    }
+    50%{
+        background-position-x: -100px; 
+    }
+    100%{
+        background-position-x: 0px; 
+    }
+}
+
+@-webkit-keyframes pulse {
+    0% {@include scale(1)}
+    25% {@include scale(1.05)}
+    50% {@include scale(1)}
+    75% {@include scale(1)}
+    100% {@include scale(1)}
+}
+
+@keyframes pulse {
+    0% {@include scale(1)}
+    25% {@include scale(1.05)}
+    50% {@include scale(1)}
+    75% {@include scale(1)}
+    100% {@include scale(1)}
+}
+
+@-moz-keyframes pulse {
+    0% {@include scale(1)}
+    25% {@include scale(1.05)}
+    50% {@include scale(1)}
+    75% {@include scale(1)}
+    100% {@include scale(1)}
+}
+@-o-keyframes pulse {
+    0% {@include scale(1)}
+    25% {@include scale(1.05)}
+    50% {@include scale(1)}
+    75% {@include scale(1)}
+    100% {@include scale(1)}
+}
+@-ms-keyframes pulse{
+    0% {@include scale(1)}
+    25% {@include scale(1.05)}
+    50% {@include scale(1)}
+    75% {@include scale(1)}
+    100% {@include scale(1)}
+}
+
+@-webkit-keyframes zoomInOut {
+    0% {@include scale(0)}
+    50% {@include scale(1.2)}
+    100% {@include scale(1)}
+}
+
+@keyframes zoomInOut {
+    0% {@include scale(0)}
+    50% {@include scale(1.2)}
+    100% {@include scale(1)}
+}
+@-moz-keyframes zoomInOut {
+    0% {@include scale(0)}
+    50% {@include scale(1.2)}
+    100% {@include scale(1)}
+}
+@-o-keyframes zoomInOut {
+    0% {@include scale(0)}
+    50% {@include scale(1.2)}
+    100% {@include scale(1)}
+}
+@-ms-keyframes zoomInOut {
+    0% {@include scale(0)}
+    50% {@include scale(1.2)}
+    100% {@include scale(1)}
+}
+@-webkit-keyframes opaq{
+	0%{opacity: .5;}
+	20%{opacity: 1;}
+	40%{opacity: .5;}
+	60%{opacity: 1;}
+	80%{opacity: .5;}
+	100%{opacity: 1;}
+}
+@keyframes opaq{
+	0%{opacity: 1;}
+	20%{opacity: 0.5;}
+	40%{opacity: 1;}
+	60%{opacity: 0.5;}
+	80%{opacity: 1;}
+	100%{opacity: 0.5;}
+}
+@keyframes opaqPulse{
+	0%{opacity: 1;@include scale(1);}
+	25%{opacity: 0.5;@include scale(1.05);}
+	50%{opacity: 1;@include scale(1);}
+	75%{opacity: 0.5;@include scale(1.05);}
+	100%{opacity: 1;@include scale(1)} 
+}

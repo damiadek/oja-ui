@@ -1,0 +1,41 @@
+
+@media screen and (max-width: 766px){
+    .nav {
+        > li > a {
+            display: inline-block !important;
+            float: left;
+        }
+
+        span.text {
+            display: none;
+        }
+
+        a {
+            font-size: 20px !important;
+            font-weight: normal;
+        }
+    }
+
+    .navbar-nav .open .dropdown-menu {
+        position: fixed;
+        top: 100px !important;
+        right: 0;
+        left: 0;
+        background: $white-bg;
+        padding: 15px;
+
+        &:before, &:after {
+            border: none;
+        }
+    }
+
+    svg{
+        width: 25px;
+        height: 25px;
+        fill: #777;
+    }
+
+    ul._carousel li{
+        padding-left: 5px;
+    }
+}

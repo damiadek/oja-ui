@@ -1,0 +1,78 @@
+
+
+.fadeStuff{
+    position: relative;
+}
+
+body{
+    position: relative;
+    height: 100%!important;
+    width: 100%;
+    font-size: $base-font-size;
+    color: $base-font-color;
+    background-color: $body-bg;
+    background: unquote($body-bg-image);
+    background-attachment: fixed;
+    @include oversize-bg(100%, 120%);
+    overflow-x: hidden;
+    
+    /*specific for home page*/
+    &.home{
+        @include oversize-bg(1800px, 900px);            
+        background-position: 0px -100px;
+        background-repeat: no-repeat;
+        @include transition(background-position .4s);
+        @include animation(panarom 35s infinite ease-in-out);
+    }
+    .ng-enter,
+    .ng-hide{
+        top: 10px;
+        opacity: 0;
+        transition: all .5s ease-in;
+    }
+    .ng-enter.ng-enter-active{
+        top: 0px;
+        transition: all .5s ease-in;
+        // transition-delay: .2s;
+        opacity: 1; 
+    }
+    .ng-leave{
+        top: 0px;
+        opacity: 0;
+    }
+    .ng-leave.ng-leave-active{
+        top: 10px;
+        opacity: 0;
+    }
+}
+
+.cover{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    visibility: hidden;
+    transition: all .5s ease, scale 2s ease;
+    opacity: 0;
+
+    &.load-cover{
+        background: $white-bg;
+        z-index: $base-index * 99;
+        text-align: center;
+        & > img{
+            position: relative;
+            top: 40vh;
+            @include animation(opaqPulse 6s infinite);
+        }
+    }
+    &.blanket{
+        background: transparentize($dark-bg, .6);
+        z-index: ($base-index * 7);
+    }
+}
+
+.cover.open{
+    visibility: visible;
+    opacity: 1;
+}

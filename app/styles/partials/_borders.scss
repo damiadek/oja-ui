@@ -1,0 +1,78 @@
+
+/* Borders */
+
+.no-b {
+    border: 0!important;
+}
+
+.b {
+    border: 1px solid lighten($default-color, 10%);
+}
+
+.b-t {
+    border-top: 1px solid  lighten($default-color, 10%);
+}
+
+.b-r {
+    border-right: 1px solid  lighten($default-color, 10%);
+}
+
+.b-b {
+    border-bottom: 1px solid  lighten($default-color, 10%);
+}
+
+.b-l {
+    border-left: 1px solid lighten($default-color, 10%);
+}
+
+.b-default {
+    border-color: lighten($default-color, 10%);
+}
+
+.b-primary {
+    border-color: $primary-color;
+}
+
+.b-info {
+    border-color: $info-color;
+}
+
+.b-success {
+    border-color: $success-color;
+}
+
+.b-warning {
+    border-color: $warning-color;
+}
+
+.b-danger {
+    border-color: $danger-color;
+}
+
+.b-2 {
+    border-width: 2px;
+}
+
+.b-3 {
+    border-width: 3px;
+}
+
+.b-4 {
+    border-width: 4px;
+}
+
+.b-n-t {
+    border-top: 0;
+}
+
+.b-n-r {
+    border-right: 0;
+}
+
+.b-n-b {
+    border-bottom: 0;
+}
+
+.b-n-l {
+    border-left: 0;
+}

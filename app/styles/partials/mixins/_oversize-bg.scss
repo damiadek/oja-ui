@@ -1,0 +1,3 @@
+@mixin oversize-bg($horiz, $vert){
+        background-size: $horiz $vert;
+}

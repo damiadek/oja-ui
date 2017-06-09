@@ -1,0 +1,29 @@
+version: 0.1
+#
+#environment_variables:
+#  plaintext:
+#    key: "value"
+#    key: "value"
+
+phases:
+  install:
+    commands:
+      - echo Installation started on `date`
+      - npm install
+      - npm install -g bower
+      - bower install --allow-root
+  pre_build:
+    commands:
+      - echo Pre-build phase started on `date`
+  build:
+    commands:
+      - echo Build started on `date`
+#     - grunt
+  post_build:
+    commands:
+      - echo Build completed on `date`
+#     - grunt test
+#artifacts:
+#  files:
+#    - location
+#  discard-paths: yes

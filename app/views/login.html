@@ -1,0 +1,46 @@
+<!--login form-->
+<div class="form-div col-md-4 col-md-offset-4 r f-s-17 m-b-xxl" ng-cloak>
+  <form class="row">
+    <h3 class=" full-width text-center">
+      <img src="images/logo.png" height="60" alt="OjaExpress"> 
+      OjaExpress
+    </h3>
+
+    <fieldset class="login col-md-12">
+      
+      <h2 class="text-center">Please enter your details</h2>
+
+      <div class="form-group col-md-12">
+        <input class="form-control" type="text" placeholder="Email Address">
+      </div>
+      <div class="form-group col-md-12">
+        <input class="form-control" type="password" placeholder="Enter your password">
+      </div>
+      <div class="form-group col-md-12">
+        <button class="btn btn-block btn-success login_button" ng-click="loginFunction()">LOGIN</button>
+      </div>
+      
+      <br>
+      <div class="form-group col-md-12 text-center">
+        Forgot Password? <a href="#!/reset-password">reset</a>
+      </div>
+      
+      <div class="form-group col-md-12 text-center">
+        New user? <button class="swap_button btn btn-small btn-warning" ng-click="go('/signup')">SIGN UP</button>
+        <small class="f-s-17">or <b>Login</b> with </small>
+        <a href="#" class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x tw-icon"></i>
+          <i class="fa fa-twitter fa-stack-1x tw-icon"></i>
+        </a>
+        <small class="f-s-17">or</small>
+        <a href="#" class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x fb-icon"></i>
+          <i class="fa fa-facebook fa-stack-1x fb-icon"></i>
+        </a>
+      </div>
+
+      
+    </fieldset>
+
+  </form>
+</div>

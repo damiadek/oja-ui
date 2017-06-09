@@ -1,0 +1,128 @@
+
+/* Backgrounds */
+
+.bg-n {
+    background: transparent!important;
+}
+
+.bg-primary {
+    background-color: $primary-color;
+    color: #fff;
+
+    &.dark {
+        background-color: darken($primary-color, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color: lighten($primary-color, 55%);
+        color: #fff;
+    }
+}
+
+
+.bg-success {
+    background-color: $success-color;
+    color: #fff;
+
+    &.dark {
+        background-color: darken($success-color, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color: lighten($success-color, 55%);
+        color: #fff;
+    }
+}
+
+
+.bg-info {
+    background-color: $info-color;
+    color: #fff;
+
+    &.dark {
+        background-color: darken($info-color, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color: lighten($info-color, 55%);
+        color: #fff;
+    }
+}
+
+
+.bg-warning {
+    background-color: $warning-color;
+    color: #fff;
+
+    &.dark {
+        background-color: darken($warning-color, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color: lighten($warning-color, 55%);
+        color: #fff;
+    }
+}
+
+
+.bg-danger {
+    background-color: $danger-color;
+    color: #fff;
+
+    &.dark {
+        background-color: darken($danger-color, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color: lighten($danger-color, 55%);
+        color: #fff;
+    }
+}
+
+
+.bg-dark {
+    background-color: lighten($dark-bg, 15%);
+    color: #fff;
+
+    &.dark {
+        background-color:  lighten($dark-bg, 15%);
+        color: #fff;
+    }
+
+    &.light {
+        background-color:  lighten($dark-bg, 55%);
+        color: #fff;
+    }
+}
+
+.bg-light {
+  background-color: darken($white-bg, 5%);
+
+  &.dark {
+    background-color: darken($white-bg, 10%);
+  }
+
+  &.light {
+    background-color: $white-bg;
+  }
+}
+
+.bg-gray {
+    background-color: $default-color;
+
+    &.dark {
+        background-color: darken($default-color, 5%);
+    }
+
+    &.light {
+        background-color: lighten($default-color, 55%);
+    }
+}
+.translucent{
+    background: transparentize($dark-bg, 0.5);
+}

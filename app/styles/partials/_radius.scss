@@ -1,0 +1,51 @@
+
+/* Radius */
+
+.r-5{
+    border-radius: 5px;
+}
+.input-addon-r{
+    border-top-left-radius: 4px;
+    border-bottom-left-radius: 4px;
+}
+
+.no-r {
+    border-radius: 0!important;
+}
+
+.r {
+    border-radius: 2px;
+}
+
+.r-t-l {
+    border-top-left-radius: 2px;
+}
+
+.r-t-r {
+    border-top-right-radius: 2px;
+}
+
+.r-b-l {
+    border-bottom-left-radius: 2px;
+}
+
+.r-b-r {
+    border-bottom-right-radius: 2px;
+}
+
+.no-r-t-l {
+    border-top-left-radius: 0!important;
+}
+
+.no-r-t-r {
+    border-top-right-radius: 0!important;
+}
+
+.no-r-b-l {
+    border-bottom-left-radius: 0!important;
+}
+
+.no-r-b-r {
+    border-bottom-right-radius: 0!important;
+}
+

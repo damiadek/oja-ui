@@ -1,0 +1,36 @@
+
+@media screen and (min-width: 768px){ 
+
+    body.home{
+        @include oversize-bg(120%, 120%);
+    }
+
+    .navbar{
+        @include transition(all .5s ease-in-out);
+        @include padding-horizontal(50px);
+        padding-top: 0;
+        height: auto;
+        font-stretch: expanded;
+        box-shadow: none;
+        .dropdown{
+            display: inline-block;
+        }
+    }
+    ._nav{
+        background: transparent;
+    }
+    .visible-sm{
+        display: inline-block!important;
+    }
+    .form-div{
+        margin-top: 20vh;
+    }
+    .more{
+        left: 48%;
+        width: 4%;
+    }
+    .fixed-nav.affix{
+        top: 50px;
+        padding-left: 100px;
+    }
+}
